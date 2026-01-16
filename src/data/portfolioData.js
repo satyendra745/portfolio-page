@@ -20,9 +20,15 @@ export const PORTFOLIO_DATA = {
   ],
   experience: [
     {
-      company: "MuksRobotics",
+      company: "Highflow Industries(NextStep Robotics)",
       role: "Robotics Engineer",
-      period: "April 2025 – Present",
+      period: "dec 2024 – Present",
+      tasks: ["Building autonomous navigation stacks for AMRs.", "Integrating LiDAR and RGB-D cameras for 3D SLAM.", "Developing hardware-agnostic Robot SDKs."]
+    },
+    {
+      company: "Highflow Industries(NextStep Robotics)",
+      role: "Robotics Engineer",
+      period: "dec 2024 – Present",
       tasks: ["Building autonomous navigation stacks for AMRs.", "Integrating LiDAR and RGB-D cameras for 3D SLAM.", "Developing hardware-agnostic Robot SDKs."]
     }
   ],
