@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring } from 'framer-motion';
-import { ChevronRight, GraduationCap, Mail, Cpu } from 'lucide-react';
+import { ChevronRight, Mail } from 'lucide-react';
+
+// Particles Animation Imports
+import { Particles, initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim"; 
+
+// Aapke Components aur Data
 import { PORTFOLIO_DATA } from './data/portfolioData';
 import Sidebar from './components/Sidebar';
 import ProjectCard from './components/ProjectCard';
@@ -10,13 +16,24 @@ export default function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [selectedProject, setSelectedProject] = useState(null);
   const [typedText, setTypedText] = useState('');
+  const [init, setInit] = useState(false);
 
-  // Mouse Simulation Logic
+  // 1. Particles Engine Initialize (Background Lines ke liye)
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  // 2. Mouse Glow Logic
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
   const smoothX = useSpring(mouseX, { damping: 25, stiffness: 150 });
   const smoothY = useSpring(mouseY, { damping: 25, stiffness: 150 });
 
+  // 3. Typing Animation Logic
   const phrases = useMemo(() => ["ROS 2 Dev", "AI & Robotics", "SLAM Expert"], []);
   
   useEffect(() => {
@@ -25,36 +42,72 @@ export default function App() {
       const currentPhrase = phrases[i];
       setTypedText(isDeleting ? currentPhrase.substring(0, j - 1) : currentPhrase.substring(0, j + 1));
       j = isDeleting ? j - 1 : j + 1;
-      if (!isDeleting && j === currentPhrase.length) setTimeout(() => isDeleting = true, 2000);
-      else if (isDeleting && j === 0) { isDeleting = false; i = (i + 1) % phrases.length; }
+      
+      if (!isDeleting && j === currentPhrase.length) {
+        setTimeout(() => isDeleting = true, 2000);
+      } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % phrases.length;
+      }
       setTimeout(type, isDeleting ? 50 : 100);
     };
-    type();
+    const timer = setTimeout(type, 100);
+    return () => clearTimeout(timer);
   }, [phrases]);
 
   return (
-    <div className="min-h-screen bg-[#010409] text-[#e6edf3]" onMouseMove={(e) => { mouseX.set(e.clientX); mouseY.set(e.clientY); }}>
+    <div className="min-h-screen bg-[#010409] text-[#e6edf3] relative overflow-hidden" 
+         onMouseMove={(e) => { mouseX.set(e.clientX); mouseY.set(e.clientY); }}>
       
-      {/* Interactive Mouse Glow Background */}
-      <motion.div className="fixed top-0 left-0 w-[600px] h-[600px] bg-[#0ea5e9]/10 blur-[120px] rounded-full pointer-events-none z-0"
-        style={{ x: smoothX, y: smoothY, translateX: "-50%", translateY: "-50%" }} />
+      {/* BACKGROUND ANIMATION: Connectivity Lines */}
+      {init && (
+        <Particles
+          id="tsparticles"
+          className="absolute inset-0 z-0"
+          options={{
+            fpsLimit: 60,
+            interactivity: {
+              events: { onHover: { enable: true, mode: "grab" } },
+              modes: { grab: { distance: 140, links: { opacity: 0.5 } } },
+            },
+            particles: {
+              color: { value: "#0ea5e9" },
+              links: { color: "#0ea5e9", distance: 150, enable: true, opacity: 0.15, width: 1 },
+              move: { enable: true, speed: 0.8 },
+              number: { density: { enable: true, area: 800 }, value: 100 },
+              opacity: { value: 0.3 },
+              size: { value: { min: 1, max: 2 } },
+            },
+          }}
+        />
+      )}
+
+      {/* Mouse Glow Effect */}
+      <motion.div 
+        className="fixed top-0 left-0 w-[600px] h-[600px] bg-[#0ea5e9]/10 blur-[120px] rounded-full pointer-events-none z-1"
+        style={{ x: smoothX, y: smoothY, translateX: "-50%", translateY: "-50%" }} 
+      />
 
       <Sidebar activeSection={activeSection} />
 
       <main className="lg:ml-72 relative z-10">
         
-        {/* Home Section */}
+        {/* HOME SECTION */}
         <section id="home" className="h-screen flex flex-col items-center justify-center text-center p-8">
-          <motion.h1 className="text-7xl lg:text-9xl font-black bg-gradient-to-r from-white via-[#0ea5e9] to-purple-500 bg-clip-text text-transparent">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-7xl lg:text-9xl font-black bg-gradient-to-r from-white via-[#0ea5e9] to-purple-500 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-text"
+          >
             SATYENDRA
           </motion.h1>
-          <p className="text-xl lg:text-3xl font-medium text-gray-400">
+          <p className="text-xl lg:text-3xl font-medium text-gray-400 mt-4">
             Expert in <span className="text-[#0ea5e9] border-b-2 border-[#0ea5e9]">{typedText}</span>
           </p>
         </section>
 
-        {/* About Section */}
-        <section id="about" className="p-12 lg:p-24 border-t border-white/5">
+        {/* ABOUT SECTION */}
+        <section id="about" className="p-12 lg:p-24 border-t border-white/5 bg-[#010409]/60 backdrop-blur-md">
            <h2 className="text-4xl font-extrabold mb-10 border-b-4 border-[#0ea5e9] inline-block pb-2">About</h2>
            <p className="text-gray-400 text-lg leading-relaxed max-w-4xl mb-10">{PORTFOLIO_DATA.profile.bio}</p>
            <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
@@ -64,21 +117,24 @@ export default function App() {
            </div>
         </section>
 
-        {/* Skills Section */}
+        {/* SKILLS SECTION */}
         <section id="skills" className="p-12 lg:p-24 border-t border-white/5">
           <h2 className="text-4xl font-extrabold mb-12 border-b-4 border-[#0ea5e9] inline-block pb-2">Technical Skills</h2>
           <div className="grid md:grid-cols-2 gap-10 max-w-5xl">
             {PORTFOLIO_DATA.skills.map((s, idx) => (
               <div key={idx} className="flex gap-4">
                 <ChevronRight className="text-[#0ea5e9] shrink-0" />
-                <div className="flex gap-4 font-semibold"><span className="text-white min-w-[100px]">{s.category}:</span><span className="text-gray-400 font-normal">{s.items.join(", ")}</span></div>
+                <div className="flex gap-4 font-semibold">
+                  <span className="text-white min-w-[100px]">{s.category}:</span>
+                  <span className="text-gray-400 font-normal">{s.items.join(", ")}</span>
+                </div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Experience Section */}
-        <section id="experience" className="p-12 lg:p-24 border-t border-white/5">
+        {/* EXPERIENCE SECTION */}
+        <section id="experience" className="p-12 lg:p-24 border-t border-white/5 bg-[#010409]/60">
           <h2 className="text-4xl font-extrabold mb-12 border-b-4 border-[#0ea5e9] inline-block pb-2">Experience</h2>
           <div className="max-w-4xl space-y-12">
             {PORTFOLIO_DATA.experience.map((exp, idx) => (
@@ -92,27 +148,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* Education Section - Timeline Layout */}
-        <section id="education" className="p-12 lg:p-24 border-t border-white/5">
-          <h2 className="text-4xl font-extrabold mb-12 border-b-4 border-[#0ea5e9] inline-block pb-2">Education</h2>
-          <div className="max-w-4xl space-y-2">
-            {PORTFOLIO_DATA.education.map((edu, idx) => (
-              <div key={idx} className="flex gap-6 relative group">
-                <div className="flex flex-col items-center">
-                  <div className="w-4 h-4 rounded-full border-2 border-[#0ea5e9] group-hover:bg-[#0ea5e9] transition-all z-10 bg-black" />
-                  {idx !== 3 && <div className="w-[2px] h-full bg-[#30363d]" />}
-                </div>
-                <div className="pb-10 pt-0.5">
-                  <h4 className="text-2xl font-bold text-white group-hover:text-[#0ea5e9] transition-all">{edu.degree}</h4>
-                  <div className="mt-2 inline-block px-3 py-1 bg-white/5 rounded text-[#0ea5e9] font-bold text-xs tracking-widest">{edu.period}</div>
-                  <p className="text-gray-500 mt-2 italic">{edu.institution}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Projects Section */}
+        {/* PROJECTS SECTION */}
         <section id="projects" className="p-12 lg:p-24 border-t border-white/5">
           <h2 className="text-4xl font-extrabold mb-12 border-b-4 border-[#0ea5e9] inline-block pb-2">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -122,16 +158,18 @@ export default function App() {
           </div>
         </section>
 
-        {/* Contact Section */}
-        <section id="contact" className="p-12 lg:p-24 border-t border-white/5 bg-[#030a1c]/20 text-center">
+        {/* CONTACT SECTION */}
+        <section id="contact" className="p-12 lg:p-24 border-t border-white/5 bg-[#030a1c]/40 text-center">
            <h2 className="text-4xl font-extrabold mb-6">Contact</h2>
            <p className="text-gray-400 mb-10 max-w-xl mx-auto">Inbox is always open for new opportunities!</p>
            <a href="mailto:satyendra@example.com" className="px-12 py-4 bg-[#0ea5e9] rounded-xl font-bold hover:scale-105 transition-all inline-flex items-center gap-2 shadow-lg shadow-sky-500/20">
              <Mail size={20} /> Say Hello
            </a>
         </section>
+
       </main>
 
+      {/* Project Detail Modal */}
       <AnimatePresence>
         {selectedProject && <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />}
       </AnimatePresence>
