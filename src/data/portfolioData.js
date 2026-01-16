@@ -2,20 +2,21 @@ export const PORTFOLIO_DATA = {
   profile: {
     name: "Satyendra",
     title: "Robotics & AI Engineer",
-    bio: "I am a passionate AI and Robotics Engineer specialized in building autonomous systems. My expertise lies in ROS 2, SLAM, and Computer Vision. I focus on bridging the gap between high-fidelity simulations and real-world robot deployment.",
+    bio: "AI and Robotics engineer with hands-on experience developing autonomous navigation, SLAM, and simulation-driven robotic systems. Worked on AMR, humanoid, quadruped, and manipulator platforms using ROS 2, LiDAR, depth cameras, and high-fidelity simulation.",
     details: [
-      "5+ Projects in Autonomous Navigation",
-      "Expertise in ROS 2 & NVIDIA Jetson Platforms",
-      "Specialized in LiDAR-based 3D SLAM",
-      "Proficient in Gazebo & Ignition Simulation"
+      "Experienced in integrating AI models, imitation and reinforcement learning pipelines.",
+      "Developing systems from simulation to real-world robots.",
+      "Strong focus on scalable software architecture using ROS 2 (Humble/Jazzy).",
+      "Proficient in hardware deployment on NVIDIA Jetson platforms."
     ],
     socials: { linkedin: "#", github: "#", twitter: "#" }
   },
   skills: [
-    { category: "Robotics", items: ["ROS 2", "Nav2", "MoveIt 2", "SLAM", "URDF/SDF"] },
-    { category: "AI & Vision", items: ["PyTorch", "OpenCV", "YOLO", "TensorRT", "MediaPipe"] },
-    { category: "Control & Sim", items: ["Gazebo", "Mujoco", "PID Control", "MPC", "Python/C++"] },
-    { category: "Hardware", items: ["Jetson Orin", "LiDAR", "IMU", "Depth Cameras", "Micro-controllers"] }
+    { category: "Core", items: ["Python (OOP)", "C++", "C"] },
+    { category: "Simulation", items: ["Isaac Sim", "Isaac Lab", "Ignition Gazebo"] },
+    { category: "Robotics", items: ["ROS 2", "Nav2", "RTAB-MAP", "MoveIt 2"] },
+    { category: "Tools", items: ["Git", "Linux", "AutoCAD (Fusion360)"] },
+    { category: "AI & CV", items: ["PyTorch", "YOLOv8", "OpenCV", "MediaPipe", "LLM", "Reinforcement Learning"] }
   ],
   experience: [
     {
@@ -40,7 +41,7 @@ export const PORTFOLIO_DATA = {
   ],
   education: [
     {
-      degree: "Bachelor of Technology in Robotics/AI",
+      degree: "Bachelor of Technology",
       institution: "Your University Name",
       period: "2021 – 2025",
       score: "CGPA: 8.5/10"
