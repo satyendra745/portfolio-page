@@ -68,15 +68,15 @@ export default function App() {
             fpsLimit: 60,
             interactivity: {
               events: { onHover: { enable: true, mode: "grab" } },
-              modes: { grab: { distance: 140, links: { opacity: 0.5 } } },
+              modes: { grab: { distance: 140, links: { opacity: 0.8 } } },
             },
             particles: {
-              color: { value: "#0ea5e9" },
-              links: { color: "#0ea5e9", distance: 150, enable: true, opacity: 0.15, width: 1 },
+              color: { value: "#c1e90eff" },
+              links: { color: "#2109f7ff", distance: 150, enable: true, opacity: 0.25, width: 2 },
               move: { enable: true, speed: 0.8 },
               number: { density: { enable: true, area: 800 }, value: 100 },
-              opacity: { value: 0.3 },
-              size: { value: { min: 1, max: 2 } },
+              opacity: { value: 0.8 },
+              size: { value: { min: 2, max: 4 } },
             },
           }}
         />
