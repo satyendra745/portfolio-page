@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { X, Play, Image as ImageIcon, Cpu, Terminal } from 'lucide-react';
+import { X, PlayCircle, Image as ImageIcon, Cpu, Terminal } from 'lucide-react';
 
 const ProjectModal = ({ project, onClose }) => {
   if (!project) return null;
@@ -22,7 +22,7 @@ const ProjectModal = ({ project, onClose }) => {
       >
         <button 
           onClick={onClose}
-          className="absolute right-6 top-6 text-gray-500 hover:text-white z-10 p-2 bg-white/5 rounded-full transition-all"
+          className="absolute right-6 top-6 text-gray-500 hover:text-white z-20 p-2 bg-white/5 rounded-full transition-all"
         >
           <X size={32} />
         </button>
@@ -30,10 +30,10 @@ const ProjectModal = ({ project, onClose }) => {
         <div className="flex-1 overflow-y-auto p-8 lg:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             
-            {/* Left Column: Media & Info */}
+            {/* Left Column: Image & Info */}
             <div className="lg:col-span-7 space-y-8">
               <div className="space-y-4">
-                <img src={project.img} className="w-full h-[450px] object-cover rounded-2xl border border-[#30363d] shadow-2xl" alt="" />
+                <img src={project.img} className="w-full h-[400px] object-cover rounded-2xl border border-[#30363d] shadow-2xl" alt={project.title} />
                 <div className="grid grid-cols-4 gap-4">
                    {[...Array(4)].map((_, idx) => (
                      <div key={idx} className="h-20 bg-[#161b22] rounded-xl border border-[#30363d] flex items-center justify-center text-gray-700 hover:border-[#0ea5e9] transition-all cursor-pointer">
@@ -55,31 +55,40 @@ const ProjectModal = ({ project, onClose }) => {
                     <p className="font-bold">{project.tag}</p>
                   </div>
                 </div>
-                <p className="text-gray-400 text-lg leading-relaxed">{project.desc} Implementations involve advanced SLAM optimization, real-time visual odometry, and edge deployment on NVIDIA platforms.</p>
+                <p className="text-gray-400 text-lg leading-relaxed">
+                  {project.desc}. Implementations involve advanced SLAM optimization, real-time visual odometry, and edge deployment on NVIDIA platforms.
+                </p>
               </div>
             </div>
 
-            {/* Right Column: Video Gallery */}
+            {/* Right Column: Video Demo Section */}
             <div className="lg:col-span-5 space-y-8">
               <h3 className="text-2xl font-bold text-white flex items-center gap-3">
-                <Play className="text-[#0ea5e9]" /> Learnings & Demos
+                <PlayCircle className="text-[#0ea5e9]" /> Project Live Demo
               </h3>
-              <div className="space-y-6">
-                 {[
-                   { title: "Simulation Demo", type: "Gazebo" },
-                   { title: "Real Robot Performance", type: "Deployment" },
-                   { title: "Hardware Benchmarking", type: "Profiling" }
-                 ].map((vid, idx) => (
-                   <div key={idx} className="bg-black rounded-2xl border border-[#30363d] overflow-hidden group relative">
-                     <div className="px-4 py-3 bg-[#161b22] border-b border-[#30363d] flex justify-between items-center">
-                       <span className="text-sm font-bold text-gray-300">{vid.title}</span>
-                       <span className="text-[10px] font-bold text-[#0ea5e9] uppercase bg-sky-500/10 px-2 py-0.5 rounded">{vid.type}</span>
-                     </div>
-                     <div className="aspect-video bg-[#030a1c] flex items-center justify-center group-hover:bg-[#030a1c]/70 transition-all cursor-pointer">
-                       <Play size={48} className="text-[#0ea5e9] opacity-30 group-hover:opacity-100 transition-opacity" />
-                     </div>
-                   </div>
-                 ))}
+              
+              <div className="w-full max-w-[320px] mx-auto aspect-[9/16] bg-black rounded-3xl border-4 border-[#30363d] overflow-hidden shadow-2xl shadow-sky-500/20 relative">
+                {project.videoUrl ? (
+                  <iframe 
+                    className="w-full h-full"
+                    src={`${project.videoUrl}?autoplay=1&mute=1&loop=1&playlist=${project.videoUrl.split('/').pop()}`}
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen>
+                  </iframe>
+                ) : (
+                  <div className="flex flex-col items-center justify-center h-full text-gray-600">
+                    <PlayCircle size={48} className="mb-2 opacity-20" />
+                    <p className="italic">Demo Coming Soon</p>
+                  </div>
+                )}
+              </div>
+              
+              <div className="p-4 bg-sky-500/5 border border-sky-500/10 rounded-xl">
+                <p className="text-sm text-gray-400 text-center">
+                  Showing real-time hardware performance and software integration.
+                </p>
               </div>
             </div>
 
