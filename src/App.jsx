@@ -71,8 +71,8 @@ export default function App() {
               modes: { grab: { distance: 140, links: { opacity: 0.8 } } },
             },
             particles: {
-              color: { value: "#c1e90eff" },
-              links: { color: "#2109f7ff", distance: 150, enable: true, opacity: 0.25, width: 2 },
+              color: { value: "#1606f3ff" },
+              links: { color: "#2109f7ff", distance: 150, enable: true, opacity: 0.5, width: 4 },
               move: { enable: true, speed: 0.8 },
               number: { density: { enable: true, area: 800 }, value: 100 },
               opacity: { value: 0.8 },
