@@ -117,6 +117,20 @@ export default function App() {
           </div>
         </section>
 
+        {/* Contact Section */}
+        <section id="contact" className="p-12 lg:p-24 border-t border-[#161b22]">
+          <h2 className="text-4xl font-extrabold text-white mb-8 border-b-4 border-white/10 inline-block pb-2">Contact</h2>
+          <div className="bg-[#0d1117] p-8 rounded-3xl border border-[#30363d] max-w-2xl">
+            <p className="text-gray-400 mb-6">I am currently looking for new opportunities. My inbox is always open!</p>
+            <a 
+              href="mailto:your-email@example.com" 
+              className="inline-block px-8 py-3 bg-[#0ea5e9] text-white font-bold rounded-xl hover:bg-sky-600 transition-all"
+            >
+              Say Hello
+            </a>
+          </div>
+        </section>
+
         {/* Projects Section */}
         <section id="projects" className="p-12 lg:p-24 border-t border-[#161b22]">
           <h2 className="text-4xl font-extrabold text-white mb-12 border-b-4 border-white/10 inline-block pb-2">Featured Projects</h2>
