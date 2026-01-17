@@ -75,7 +75,7 @@ export const PORTFOLIO_DATA = {
       title: "Autonomous AMR Navigation", 
       category: "Robotics", 
       tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3],
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
       videoData: [
         { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
         { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
