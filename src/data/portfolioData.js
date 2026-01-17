@@ -150,66 +150,101 @@ export const PORTFOLIO_DATA = {
       techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
     },
 
-        { 
+    { 
       id: 16, 
-      title: "Autonomous AMR Navigation", 
+      title: "Scratch-Built Autonomous AMR: 3D Mapping & Navigation", 
       category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      tag: "Full-Stack Robotics", 
+      img: p16_img1, 
+      images: [p16_img1, p16_img2, p16_img3],
       videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+        { 
+          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          title: "Isaac Sim 3D Mapping", 
+          type: "Simulation", 
+          desc: "Full system testing in Isaac Sim showing 3D point-cloud generation and 2D occupancy grid mapping." 
+        },
+        { 
+          url: "https://www.youtube.com/embed/lsNRD4dlSf4", // Dummy URL
+          title: "RTAB-Map SLAM Demo", 
+          type: "SLAM Stack", 
+          desc: "Real-time 3D SLAM using RTAB-Map with 3D LiDAR for loop closure and localization." 
+        }
       ],
       detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+        "End-to-end development of a Differential Drive AMR, designed from scratch starting from conceptual sketches to a complete 3D CAD model in SolidWorks.",
+        "Integrated a 3D LiDAR sensor to perform Simultaneous Localization and Mapping (SLAM), generating both high-fidelity 3D Point-Cloud maps and 2D Occupancy Grids.",
+        "Leveraged RTAB-Map (Real-Time Appearance-Based Mapping) for robust 3D mapping, enabling the robot to handle large-scale environments with precise loop closure.",
+        "Engineered the robot's physical architecture in SolidWorks, ensuring optimal weight distribution and sensor placement for stable differential drive kinematics.",
+        "Conducted extensive simulation and stress testing within NVIDIA Isaac Sim to validate the URDF model, sensor fusion logic, and navigation algorithms before deployment.",
+        "Contribution: Managed the entire lifecycle—Mechanical Design (SolidWorks), Simulation (Isaac Sim), and Software Stack (ROS 2, RTAB-Map, Nav2)."
       ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+      techStack: ["SolidWorks", "NVIDIA Isaac Sim", "ROS 2 Humble", "RTAB-Map", "3D LiDAR", "Differential Drive", "URDF Modeling"]
     },
 
-        { 
+      
+    { 
       id: 15, 
-      title: "Autonomous AMR Navigation", 
+      title: "3D Navigation for Ackermann Mobile Robot", 
       category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      tag: "Isaac Sim & ROS 2", 
+      img: p15_img1, 
+      images: [p15_img1, p15_img2],
       videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
-      ],
-      detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
-      ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
-    },
-
         { 
-      id: 14, 
-      title: "Autonomous AMR Navigation", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
-      videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          title: "Isaac Sim 3D Simulation", 
+          type: "Simulation", 
+          desc: "Simulating an Ackermann steering robot in a 3D environment using Isaac Sim with Depth Camera and LiDAR." 
+        },
+        { 
+          url: "https://www.youtube.com/embed/lsNRD4dlSf4", // Dummy URL
+          title: "RTAB-Map & Nav2 Stack", 
+          type: "ROS 2 Stack", 
+          desc: "Real-time 3D SLAM using RTAB-Map and path tracking with Regulated Pure Pursuit Controller." 
+        }
       ],
       detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+        "Developed a robust 3D navigation pipeline for an Ackermann-steering mobile robot within the NVIDIA Isaac Sim environment.",
+        "Integrated a 3D Depth Camera and 2D LiDAR for multi-sensor data fusion, enabling high-fidelity 3D environment mapping.",
+        "Utilized RTAB-Map (Real-Time Appearance-Based Mapping) for 3D SLAM, providing accurate localization and loop closure detection.",
+        "Implemented the Regulated Pure Pursuit Controller (RPPC) within the Nav2 framework to handle the unique steering constraints of the Ackermann kinematics.",
+        "Visualized real-time PointCloud data, 3D costmaps, and path trajectories using Rviz2 for system monitoring and debugging.",
+        "Contribution: Configured sensor fusion logic, tuned RPPC parameters for smooth steering, and integrated RTAB-Map with the ROS 2 Navigation stack."
       ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+      techStack: ["NVIDIA Isaac Sim", "ROS 2 Humble", "Nav2", "RTAB-Map", "3D Depth Camera", "2D LiDAR", "Ackermann Steering"]
     },
-
+    { 
+      id: 14, 
+      title: "2D Navigation for Autonomous Mobile Robot", 
+      category: "Robotics", 
+      tag: "Isaac Sim & ROS 2", 
+      img: p14_img1, 
+      images: [p14_img1, p14_img2],
+      videoData: [
+        { 
+          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL (Aap baad mein change kar sakte hain)
+          title: "Isaac Sim Simulation Demo", 
+          type: "Simulation", 
+          desc: "Simulating a mobile robot in a photorealistic environment using NVIDIA Isaac Sim with LiDAR integration." 
+        },
+        { 
+          url: "https://www.youtube.com/embed/lsNRD4dlSf4", // Dummy URL
+          title: "Nav2 & Rviz2 Visualization", 
+          type: "ROS 2 Stack", 
+          desc: "Real-time path planning and costmap generation visualized in Rviz2 using the Nav2 framework." 
+        }
+      ],
+      detailedDesc: [
+        "Developed a comprehensive 2D navigation stack for an Autonomous Mobile Robot (AMR) within the NVIDIA Isaac Sim environment.",
+        "Integrated a 2D LiDAR sensor for accurate SLAM (Simultaneous Localization and Mapping) to generate high-resolution occupancy grid maps.",
+        "Implemented the ROS 2 Navigation Stack (Nav2) to handle global and local path planning, obstacle avoidance, and recovery behaviors.",
+        "Utilized Rviz2 for real-time visualization of the robot's sensor data, transform tree (TF), and planned trajectories.",
+        "Contribution: Configured the Isaac Sim-to-ROS 2 bridge, tuned Nav2 controller and planner parameters, and optimized LiDAR-based localization accuracy.",
+        "Highlights: Seamless integration of photorealistic simulation with production-grade ROS 2 communication protocols."
+      ],
+      techStack: ["NVIDIA Isaac Sim", "ROS 2 Humble", "Nav2", "Rviz2", "2D LiDAR", "Python", "C++"]
+    },
     { 
       id: 13, 
       title: "Home Automation System", 
