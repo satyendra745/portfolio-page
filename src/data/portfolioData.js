@@ -306,10 +306,10 @@ export const PORTFOLIO_DATA = {
       techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
     },
     // Baaki projects 5-10 ko aap isi format mein 'videoData' aur 'images' arrays ke saath update kar sakte hain.
-    { id: 5, title: "WiFi-Controlled Car", category: "Navigation", tag: "IOT", 
+    { id: 5, title: "WiFi-Controlled Car", category: "Navigation", tag: "IOT", img: "https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=600",
             images: [p5_img1, p5_img2],
       videoData: [
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M",img:"https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=600", title: "WiFi-Controlled Car", type: "IOT", desc: "Remote control through a web interface or mobile app." },
+        { url: "https://www.youtube.com/embed/3WBhPUdofrI", title: "WiFi-Controlled Car", type: "IOT", desc: "Remote control through a web interface or mobile app." },
        
       ],
       detailedDesc: [
