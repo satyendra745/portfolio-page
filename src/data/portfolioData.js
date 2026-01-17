@@ -75,9 +75,10 @@ export const PORTFOLIO_DATA = {
       title: "Autonomous AMR Navigation", 
       category: "Robotics", 
       tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3],
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
       videoData: [
         { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
         { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
       ],
       detailedDesc: [
@@ -96,6 +97,7 @@ export const PORTFOLIO_DATA = {
       images: [p1_img1, p1_img2],
       videoData: [
         { url: p1_vid1, title: "Locomotion Test", type: "Simulation", desc: "Bipedal gait analysis using reinforcement learning." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
         { url: p1_vid2, title: "Stability Performance", type: "Physics Engine", desc: "Balance control under external disturbances." },
         { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "Live Feedback", type: "System Log", desc: "Real-time data visualization of joints." }
       ],
@@ -114,6 +116,7 @@ export const PORTFOLIO_DATA = {
       images: [p1_img1, p1_img2],
       videoData: [
         { url: p1_vid1, title: "Real-time Detection", type: "NVIDIA Jetson", desc: "YOLOv8 deployment on edge hardware." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
         { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "Tracking Demo", type: "Computer Vision", desc: "Multi-object tracking in dynamic urban environments." }
       ],
       detailedDesc: [
