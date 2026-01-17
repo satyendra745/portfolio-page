@@ -8,6 +8,11 @@ import p5_img1 from '../assets/images/Wifi_car2.jpg';
 import p5_img2 from '../assets/images/Wifi_car1.jpg';
 import p7_img1 from '../assets/images/dual_b2.jpg';
 import p7_img2 from '../assets/images/dual_b1.jpg';
+import p2_img1 from '../assets/images/Lidar_d2.jpg';
+import p2_img2 from '../assets/images/Lidar_d1.jpg';
+import p8_img1 from '../assets/images/breath1.jpg';
+import p8_img2 from '../assets/images/breath2.jpg';
+import p8_img3 from '../assets/images/breath3.jpg';
 
 export const PORTFOLIO_DATA = {
   profile: {
@@ -256,15 +261,15 @@ export const PORTFOLIO_DATA = {
     { 
       id: 2, 
       title: "LiDAR Data Acquisition & Storage System", 
-      category: "AI", 
-      tag: "Mujoco", 
-      images: [p1_img1, p1_img2],
-      videoData: [
-        { url: p1_vid1, title: "Locomotion Test", type: "Simulation", desc: "Bipedal gait analysis using reinforcement learning." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: p1_vid2, title: "Stability Performance", type: "Physics Engine", desc: "Balance control under external disturbances." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "Live Feedback", type: "System Log", desc: "Real-time data visualization of joints." }
-      ],
+      category: "UART", 
+      tag: "Uart", img: p2_img1,
+      images: [p2_img1, p2_img2],
+      // videoData: [
+      //   { url: p1_vid1, title: "Locomotion Test", type: "Simulation", desc: "Bipedal gait analysis using reinforcement learning." },
+      //   { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+      //   { url: p1_vid2, title: "Stability Performance", type: "Physics Engine", desc: "Balance control under external disturbances." },
+      //   { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "Live Feedback", type: "System Log", desc: "Real-time data visualization of joints." }
+      // ],
       detailedDesc: [
         "Collect and store LiDAR data for applications like navigation and object.","Real-time LiDAR data collection.","Data storage for analysis and processing.",
         "Efficient SPI communication for high-speed data transfer.",
@@ -336,7 +341,7 @@ export const PORTFOLIO_DATA = {
       techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
     },
     { id: 7, title: "Dual-Battery Intelligent Power Management System", category: "Power management", tag: "Power controller", img: p7_img1,
-             images: [p7_img1, p1_img2],
+             images: [p7_img1, p7_img2],
       videoData: [
         { url: "https://www.youtube.com/embed/680hg4BAWEE", title: "Dual-Battery Intelligent Power Management System", type: "Automatic switching between two batteries.", desc: "Manage dual batteries with intelligent power switching to extend battery life." },
         
@@ -349,11 +354,11 @@ export const PORTFOLIO_DATA = {
       ],
       techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
     },
-    { id: 8, title: "Advanced Breath Analyzer System", category: "Aviation", tag: "Arduino", 
-            images: [p1_img1, p1_img2, p1_img3],
+    { id: 8, title: "Advanced Breath Analyzer System", category: "Aviation", tag: "Arduino", img: p8_img1,
+            images: [p8_img1, p8_img2, p8_img3],
       videoData: [
-        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
-        { url: p1_vid2, title: "testing", type: "Algorithm", desc: "Decentralized control for swarm navigation." }
+        { url: "https://www.youtube.com/embed/BcDu86giw_4", title: "Advanced Breath Analyzer System", type: "Multi-Agent", desc: "Accurately detect alcohol levels with advanced calibration features." },
+        
       ],
       detailedDesc: [
         "Accurately detect alcohol levels with advanced calibration features.",
