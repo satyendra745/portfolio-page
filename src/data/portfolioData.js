@@ -4,6 +4,8 @@ import p1_vid2 from '../assets/videos/video2.mp4';
 import p1_img1 from '../assets/images/robot1.jpg';
 import p1_img2 from '../assets/images/robot2.jpg';
 import p1_img3 from '../assets/images/profile.jpg';
+import p5_img1 from '../assets/images/Wifi_car2.jpg';
+import p5_img2 from '../assets/images/Wifi_car1.jpg';
 
 export const PORTFOLIO_DATA = {
   profile: {
@@ -305,12 +307,10 @@ export const PORTFOLIO_DATA = {
     },
     // Baaki projects 5-10 ko aap isi format mein 'videoData' aur 'images' arrays ke saath update kar sakte hain.
     { id: 5, title: "WiFi-Controlled Car", category: "Navigation", tag: "IOT", 
-            images: [p1_img1, p1_img2, p1_img3],
+            images: [p5_img1, p5_img2],
       videoData: [
-        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
-        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
-        { url: p1_vid2, title: "Collision Avoidance", type: "Algorithm", desc: "Decentralized control for swarm navigation." },
-        { url: p1_vid2, title: "Collision Avoidance", type: "Algorithm", desc: "Decentralized control for swarm navigation." }
+        { url: "https://www.youtube.com/embed/LgIz2mEOI7i7kl6q",img:[p5_img1], title: "WiFi-Controlled Car", type: "IOT", desc: "Remote control through a web interface or mobile app." },
+       
       ],
       detailedDesc: [
         "Designed a car controlled remotely via WiFi for real-time navigation.",
