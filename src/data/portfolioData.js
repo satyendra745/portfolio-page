@@ -309,7 +309,7 @@ export const PORTFOLIO_DATA = {
     { id: 5, title: "WiFi-Controlled Car", category: "Navigation", tag: "IOT", 
             images: [p5_img1, p5_img2],
       videoData: [
-        { url: "https://www.youtube.com/embed/LgIz2mEOI7i7kl6q",img:[p5_img1], title: "WiFi-Controlled Car", type: "IOT", desc: "Remote control through a web interface or mobile app." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M",img:"https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=600", title: "WiFi-Controlled Car", type: "IOT", desc: "Remote control through a web interface or mobile app." },
        
       ],
       detailedDesc: [
