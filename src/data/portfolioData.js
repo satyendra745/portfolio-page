@@ -16,7 +16,13 @@ import p8_img3 from '../assets/images/breath3.jpg';
 import p6_img1 from '../assets/images/smartV1.jpg';
 import p6_img2 from '../assets/images/smartV2.jpg';
 import p6_img3 from '../assets/images/smartV3.jpg';
-
+import p9_img1 from '../assets/images/tolltax1.jpg';
+import p9_img2 from '../assets/images/tolltax2.jpg';
+import p11_img1 from '../assets/images/gpsT1.jpg';
+import p11_img2 from '../assets/images/gpsT2.jpg';
+import p12_img1 from '../assets/images/plantM1.jpg';
+import p12_img2 from '../assets/images/plantM2.jpg';
+import p3_img1 from '../assets/images/lineF1.jpg';
 export const PORTFOLIO_DATA = {
   profile: {
     name: "Satyendra",
@@ -225,12 +231,10 @@ export const PORTFOLIO_DATA = {
       id: 12, 
       title: "Plant Monitoring System", 
       category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      tag: "SLAM & ROS 2", img: p12_img1,
+      images: [p12_img1, p12_img2],
       videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+        { url: "https://www.youtube.com/embed/kEsNyaW5X4Q", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
       ],
       detailedDesc: [
         "Designed a system to monitor soil moisture and environmental conditions for healthy plant growth.",
@@ -238,19 +242,18 @@ export const PORTFOLIO_DATA = {
         "Remote data access via a web or mobile interface.",
         "Contribution: Developed sensor integration and data logging; Configured WiFi communication for remote monitoring."
       ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+      techStack: ["IOT", "C++", "Python", "ESP8266", "Blynk"]
     },
 
         { 
       id: 11, 
       title: "Multi-Control Emergency Light & Location Tracking System", 
       category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      tag: "SLAM & ROS 2", img: p11_img1,
+      images: [p11_img1, p11_img2],
       videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+        { url: "https://www.youtube.com/embed/uS0qQhdwVUM", title: "Multi-Control Emergency Light & Location Tracking System", type: "Gazebo", desc: "Design an emergency light system with multi-control features and integrated location tracking for enhanced safety." },
+       
       ],
       detailedDesc: [
         "Design an emergency light system with multi-control features and integrated location tracking for enhanced safety.",
@@ -284,12 +287,12 @@ export const PORTFOLIO_DATA = {
       id: 3, 
       title: "Obstacle Avoiding Robot", 
       category: "Vision", 
-      tag: "PyTorch",
-      images: [p1_img1, p1_img2],
+      tag: "PyTorch",img: p3_img1,
+      images: [p3_img1],
       videoData: [
-        { url: p1_vid1, title: "Real-time Detection", type: "NVIDIA Jetson", desc: "YOLOv8 deployment on edge hardware." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "Tracking Demo", type: "Computer Vision", desc: "Multi-object tracking in dynamic urban environments." }
+        { url: "https://www.youtube.com/embed/pNOSRNXqBpU", title: "Obstacle Avoiding Robot Demo", type: "NVIDIA Jetson", desc: "Developed a robot that autonomously detects and avoids obstacles in its path." },
+        
+        { url: "https://www.youtube.com/embed/Cud4aSgYm2w", title: "Obstacle Avoiding Robot", type: "Computer Vision", desc: "Autonomous navigation with sensor feedback" }
       ],
       detailedDesc: [
         "Developed a robot that autonomously detects and avoids obstacles in its path.", "Real-time obstacle detection and avoidance",
@@ -369,11 +372,11 @@ export const PORTFOLIO_DATA = {
       ],
       techStack: ["C++", "Arduino", "Python", "opencv"]
     },
-    { id: 9, title: "Smart Toll Tax System", category: "IOT", tag: "IOT",img: "https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=600" ,
-             images: [p1_img1, p1_img2, p1_img3],
+    { id: 9, title: "Smart Toll Tax System", category: "IOT", tag: "IOT",img: p9_img1 ,
+             images: [p9_img1,p9_img2],
       videoData: [
-        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
-        { url: p1_vid2, title: "number plate detection", type: "Algorithm", desc: "Decentralized control for swarm navigation." }
+        { url: "https://www.youtube.com/embed/l_SCNzqAhBg", title: "Smart Toll Tax System", type: "Multi-Agent", desc: "Developed an automated toll collection system using Raspberry Pi and Python to streamline toll payments with a QR code scanner for vehicle identification." },
+       
       ],
       detailedDesc: [
         "Developed an automated toll collection system using Raspberry Pi and Python to streamline toll payments with a QR code scanner for vehicle identification.",
@@ -382,7 +385,7 @@ export const PORTFOLIO_DATA = {
         "Data Logging: Records vehicle data and transaction history for monitoring.",
         
       ],
-      techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
+      techStack: ["C++", "Raspberry pi", "Python", "Multi-Agent Systems"]
     },
     { id: 10, title: "Jetson-Based Quadruped", category: "Embedded", tag: "Jetson Orin",
        desc: "Legged locomotion on edge AI.", img: "https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=600" }
