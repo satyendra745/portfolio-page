@@ -22,15 +22,55 @@ export const PORTFOLIO_DATA = {
     {
       company: "Highflow Industries(NextStep Robotics)",
       role: "Robotics Engineer",
-      period: "dec 2024 – Present",
+      period: "december 2024 – Present",
       tasks: ["Building autonomous navigation stacks for AMRs.", "Integrating LiDAR and RGB-D cameras for 3D SLAM.", "Developing hardware-agnostic Robot SDKs."]
     },
+
+   {
+      company: "XPRT Enforcement Pvt. Ltd.",
+      role: "Embedded System Engineer",
+      period: "August 2022 – February 2023",
+      tasks: ["Designed and developed new products", "Created, tested, and validated modules", "Prepared technical documentation and reports.", "Integrating LiDAR and RGB-D cameras for 3D SLAM.", "Developing hardware-agnostic Robot SDKs."]
+    },
     {
-      company: "Highflow Industries(NextStep Robotics)",
-      role: "Robotics Engineer",
-      period: "dec 2024 – Present",
-      tasks: ["Building autonomous navigation stacks for AMRs.", "Integrating LiDAR and RGB-D cameras for 3D SLAM.", "Developing hardware-agnostic Robot SDKs."]
+      company: ". Experio Traffiko System Pvt. Ltd.",
+      role: "Embedded software developer",
+      period: "November 2020 – October 2021",
+      tasks: ["Designed and developed new products", "Created, tested, and validated modules", "Prepared technical documentation and reports"]
     }
+
+
+  ],
+  Training: [
+    {
+      company: "Softpro India Computer Technologies Pvt. Ltd. ",
+      course: "Internet of Things (IoT)",
+      period: "July 2024 (4 week)",
+      tasks: ["IoT architecture and system design.", "Sensor integration and data acquisition.", "Cloud connectivity and remote monitoring."]
+    },
+
+    {
+      company: "Softpro India Computer Technologies Pvt. Ltd. ",
+      course: "PCB Design Crash Course",
+      period: "July 2024 (4 week)",
+      tasks: ["Schematic creation and layout design.", "Designing printed circuit boards (PCBs).", "Hands-on practice for real-world electronic projects."]
+    },
+
+    {
+      company: "Softpro India Computer Technologies Pvt. Ltd. ",
+      course: "Python with IoT and Raspberry Pi & NodeMCU",
+      period: "January 2020 (4 week)",
+      tasks: ["Python programming for IoT applications.", "Integration with Raspberry Pi and NodeMCU.", "Real-time data processing and IoT project development."]
+    },
+
+    {
+      company: "ITI Limited, Mankapur. ",
+      course: "Embedded System & Operating Environment",
+      period: "July 2019 (4 week)",
+      tasks: ["Fundamentals of embedded systems.", "Operating environments and system integration.", " Hands-on experience with microcontrollers and real-time systems."]
+    },
+    
+
   ],
   education: [
     { degree: "B.Tech in Robotics & AI", institution: "Your University Name", period: "2021 – 2025" },
