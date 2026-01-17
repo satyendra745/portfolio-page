@@ -63,7 +63,22 @@ export const PORTFOLIO_DATA = {
     { degree: "Diploma in Engineering", institution: "Your Polytechnic Name", period: "2018 – 2021" }
   ],
   projects: [
-    { id: 1, title: "Autonomous AMR Navigation", category: "Robotics", tag: "SLAM & ROS 2", videoUrl: "https://www.youtube.com/embed/ro-cJp_Rg3M", desc: "Autonomous navigation stack with real-time mapping.", img: "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?q=80&w=600" },
+    { 
+    id: 1, 
+    title: "Autonomous AMR Navigation", 
+    category: "Robotics", 
+    tag: "SLAM & ROS 2", 
+    videoUrl: "https://www.youtube.com/embed/ro-cJp_Rg3M",
+    img: "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?q=80&w=600",
+    // Detailed description ko array mein rakha hai
+    detailedDesc: [
+      "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+      "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+      "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+      "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+    ],
+    techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+  },
     { id: 2, title: "Humanoid Balance Control", category: "AI", tag: "Mujoco", desc: "Bipedal stability using RL.", img: "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=600" },
     { id: 3, title: "Edge-AI Object Tracking", category: "Vision", tag: "PyTorch", desc: "Object detection on Jetson Nano.", img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=600" },
     { id: 4, title: "Robot Swarm Coordination", category: "Multi-Agent", tag: "C++ & ROS", desc: "Multi-robot path planning.", img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600" },
