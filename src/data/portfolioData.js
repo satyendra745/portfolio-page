@@ -210,190 +210,328 @@ export const PORTFOLIO_DATA = {
       techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
     },
 
-        { 
+    { 
       id: 13, 
       title: "Home Automation System", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", img:p13_img1,
+      category: "IoT", 
+      tag: "Smart Home & IoT", 
+      img: p13_img1,
       images: [p13_img1, p13_img2],
       videoData: [
-        { url: "https://www.youtube.com/embed/MOgD9fDkweE", title: " Demo1", type: "IOT", desc: "Developed an IoT-based system to control home appliances remotely, including IR remote control and fan speed regulation." },
-        { url: "https://www.youtube.com/embed/lsNRD4dlSf4", title: "Detection", type: "NVIDIA Jetson", desc: " Remote control of lights, fans, and appliances." },
-        { url: "https://www.youtube.com/embed/fYRX1bTbIYI", title: "YouTube Demo", type: "Real World", desc: "Fan Regulator: Adjust fan speed remotely." },
-        { url: "https://www.youtube.com/embed/R0-T2Mnm6QY", title: "YouTube Demo", type: "Real World", desc: "IR Control: Manage appliances using IR signals (e.g., TV, AC, FAN)." },
-       
-      ],
-      detailedDesc: [
-        "Developed an IoT-based system to control home appliances remotely, including IR remote control and fan speed regulation.",
-        "Remote control of lights, fans, and appliances.","IR Control: Manage appliances using IR signals (e.g., TV, AC, FAN).",
-        "Fan Regulator: Adjust fan speed remotely.","Voice control via Google Assistant.",
-        "Contribution: Developed control logic for IR and fan regulation; Integrated hardware components and configured IoT platform."
-      ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
-    },
-
         { 
-      id: 12, 
-      title: "Plant Monitoring System", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", img: p12_img1,
-      images: [p12_img1, p12_img2],
-      videoData: [
-        { url: "https://www.youtube.com/embed/kEsNyaW5X4Q", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
-      ],
-      detailedDesc: [
-        "Designed a system to monitor soil moisture and environmental conditions for healthy plant growth.",
-        "Real-time soil moisture and environmental data monitoring.","Alerts for low moisture or adverse conditions.",
-        "Remote data access via a web or mobile interface.",
-        "Contribution: Developed sensor integration and data logging; Configured WiFi communication for remote monitoring."
-      ],
-      techStack: ["IOT", "C++", "Python", "ESP8266", "Blynk"]
-    },
-
+          url: "https://www.youtube.com/embed/MOgD9fDkweE", 
+          title: "Full System Demo", 
+          type: "IoT Control", 
+          desc: "Developed an IoT-based system to control home appliances remotely, including IR remote control and fan speed regulation."
+        },
         { 
-      id: 11, 
-      title: "Multi-Control Emergency Light & Location Tracking System", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", img: p11_img1,
-      images: [p11_img1, p11_img2],
-      videoData: [
-        { url: "https://www.youtube.com/embed/uS0qQhdwVUM", title: "Multi-Control Emergency Light & Location Tracking System", type: "Gazebo", desc: "Design an emergency light system with multi-control features and integrated location tracking for enhanced safety." },
-       
+          url: "https://www.youtube.com/embed/lsNRD4dlSf4", 
+          title: "System Explanation", 
+          type: "Automation Logic", 
+          desc: "Explaining the remote control of lights, fans, and appliances via mobile app and touch sensors."
+        },
+        { 
+          url: "https://www.youtube.com/embed/fYRX1bTbIYI", 
+          title: "Speed Regulation", 
+          type: "Hardware", 
+          desc: "Fan Regulator: High-level implementation to adjust fan speed remotely using the IoT platform."
+        },
+        { 
+          url: "https://www.youtube.com/embed/R0-T2Mnm6QY", 
+          title: "IR Signal Control", 
+          type: "IR Integration", 
+          desc: "IR Control: Manage appliances like TV, AC, and Fans using IR signal replication via Arduino/ESP."
+        }
       ],
-      detailedDesc: [
-        "Design an emergency light system with multi-control features and integrated location tracking for enhanced safety.",
-        "Multi-control emergency lighting.","Real-time location tracking via GPS.","Remote communication using GSM.",
-        "Contribution: System design, coding, and hardware integration; Implemented location tracking and safety features.",
-        
-      ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
-    },
+        detailedDesc: [
+          "Developed an IoT-based system to control home appliances remotely, including IR remote control and fan speed regulation.",
+          "Enabled smart control of lights, fans, and other electronic appliances through a mobile application and touch interface.",
+          "Implemented IR signal management to control legacy devices like TVs and ACs.",
+          "Integrated a digital fan regulator for precise remote speed adjustment.",
+          "Integrated voice control capabilities via Google Assistant for hands-free operation.",
+          "Contribution: Developed core control logic for IR and fan regulation; Integrated hardware components and configured the cloud IoT platform."
+        ],
+        techStack: ["IoT", "Arduino/ESP32", "C++", "Blynk/Firebase", "IR Communication"] 
+      },
+
+      { 
+        id: 12, 
+        title: "Plant Monitoring System", 
+        category: "IoT", 
+        tag: "Smart Agriculture", 
+        img: p12_img1,
+        images: [p12_img1, p12_img2],
+        videoData: [
+          { 
+            url: "https://www.youtube.com/embed/kEsNyaW5X4Q", 
+            title: "Project Demonstration", 
+            type: "Hardware Demo", 
+            desc: "Live demonstration of soil moisture sensing and real-time data transmission to the cloud." 
+          }
+        ],
+        detailedDesc: [
+          "Designed a system to monitor soil moisture and environmental conditions for healthy plant growth.",
+          "Real-time monitoring of soil moisture, temperature, and humidity using high-precision sensors.",
+          "Automated alerts system for low moisture levels or adverse environmental conditions.",
+          "Cloud-based remote data access via a customized web or mobile interface for 24/7 monitoring.",
+          "Contribution: Developed sensor integration logic, implemented data logging, and configured WiFi communication protocols for seamless remote monitoring."
+        ],
+        techStack: ["IoT", "C++", "Python", "ESP8266", "Blynk", "Sensors (Soil, DHT11)"]
+      },
+
+      { 
+        id: 11, 
+        title: "Multi-Control Emergency Light & Location Tracking System", 
+        category: "Safety & IoT", // Robotics se badal kar relevant domain kiya
+        tag: "Smart Safety", 
+        img: p11_img1,
+        images: [p11_img1, p11_img2],
+        videoData: [
+          { 
+            url: "https://www.youtube.com/embed/uS0qQhdwVUM", 
+            title: "Emergency System Demo", 
+            type: "Hardware Integration", // Gazebo ko hata kar Hardware kiya
+            desc: "An intelligent emergency light system featuring multi-control switches and integrated GPS/GSM for real-time location tracking during emergencies." 
+          }
+        ],
+        detailedDesc: [
+          "Designed an advanced emergency lighting system that can be controlled via multiple inputs for enhanced reliability in critical situations.",
+          "Integrated a GPS module to provide high-precision real-time location tracking for emergency responders.",
+          "Implemented remote communication using GSM technology to send automated emergency alerts and coordinates to pre-configured mobile numbers.",
+          "Developed an intelligent switching logic to ensure the emergency light activates instantly during power failures or triggered events.",
+          "Contribution: Designed the full circuit architecture, developed the location-sharing firmware, and integrated GSM/GPS protocols for seamless remote communication."
+        ],
+        techStack: ["Arduino/ESP32", "C++", "GPS Module (NEO-6M)", "GSM Module (SIM800L)", "IoT Sensors"] // LiDAR/ROS ko hata kar actual hardware stack dala
+      },
 
     { 
       id: 2, 
       title: "LiDAR Data Acquisition & Storage System", 
-      category: "UART", 
-      tag: "Uart", img: p2_img1,
+      category: "Embedded Systems", 
+      tag: "Hardware & Data Logging", 
+      img: p2_img1,
       images: [p2_img1, p2_img2],
-      // videoData: [
-      //   { url: p1_vid1, title: "Locomotion Test", type: "Simulation", desc: "Bipedal gait analysis using reinforcement learning." },
-      //   { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-      //   { url: p1_vid2, title: "Stability Performance", type: "Physics Engine", desc: "Balance control under external disturbances." },
-      //   { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "Live Feedback", type: "System Log", desc: "Real-time data visualization of joints." }
-      // ],
+      // Agar iska video link milta hai toh aap yahan embed kar sakte hain
+      videoData: [], 
       detailedDesc: [
-        "Collect and store LiDAR data for applications like navigation and object.","Real-time LiDAR data collection.","Data storage for analysis and processing.",
-        "Efficient SPI communication for high-speed data transfer.",
-        "Contribution: System implementation and coding; Hardware integration and data storage management."
+        "Objective: Collect and store LiDAR data for applications like navigation and object detection.",
+        "Implemented real-time LiDAR data collection for spatial analysis and environmental mapping.",
+        "Integrated an SD Card Module to store large datasets for offline processing and analysis.",
+        "Utilized the SPI Protocol for high-speed communication between the microcontroller and the storage module.",
+        "Contribution: Managed system implementation, end-to-end coding, hardware integration, and data storage management."
       ],
-      techStack: ["Python", "Mujoco", "PyTorch", "Deep RL"]
+      techStack: ["Arduino Nano", "C++", "SPI Protocol", "SD Card Module", "LiDAR Sensor"] 
     },
+
     { 
       id: 3, 
       title: "Obstacle Avoiding Robot", 
-      category: "Vision", 
-      tag: "PyTorch",img: p3_img1,
+      category: "Robotics", 
+      tag: "Automation & Sensors", 
+      img: p3_img1,
       images: [p3_img1],
       videoData: [
-        { url: "https://www.youtube.com/embed/pNOSRNXqBpU", title: "Obstacle Avoiding Robot Demo", type: "NVIDIA Jetson", desc: "Developed a robot that autonomously detects and avoids obstacles in its path." },
-        
-        { url: "https://www.youtube.com/embed/Cud4aSgYm2w", title: "Obstacle Avoiding Robot", type: "Computer Vision", desc: "Autonomous navigation with sensor feedback" }
+        { 
+          url: "https://www.youtube.com/embed/pNOSRNXqBpU", 
+          title: "Hardware Demonstration", 
+          type: "Arduino Control", 
+          desc: "Developed a robot that autonomously detects and avoids obstacles using ultrasonic sensors and real-time logic." 
+        },
+        { 
+          url: "https://www.youtube.com/embed/Cud4aSgYm2w", 
+          title: "Navigation Test", 
+          type: "Sensor Feedback", 
+          desc: "Autonomous navigation testing with continuous sensor feedback for path clearing." 
+        }
       ],
       detailedDesc: [
-        "Developed a robot that autonomously detects and avoids obstacles in its path.", "Real-time obstacle detection and avoidance",
-        "Autonomous navigation with sensor feedback","Smooth motor control for direction changes",
-        "Contribution:- Implemented obstacle detection algorithms","            Integrated sensor and motor control systems",
+        "Developed an autonomous robot capable of detecting and avoiding obstacles in its path without human intervention.",
+        "Integrated Ultrasonic Sensors (HC-SR04) to measure distances and identify barriers in real-time.",
+        "Implemented smart navigation logic for smooth motor control and rapid direction changes upon obstacle detection.",
+        "Optimized power management for consistent motor torque and sensor accuracy during operation.",
+        "Contribution: Designed the circuit architecture, implemented the obstacle avoidance algorithm in C++, and integrated the motor driver with the sensor system."
       ],
-      techStack: ["PyTorch", "OpenCV", "YOLOv8", "Jetson Orin"]
+      techStack: ["Arduino", "C++", "Ultrasonic Sensor", "L298N Motor Driver", "Embedded Systems"] 
     },
     { 
       id: 4, 
       title: "Line Follower Robot (L.F.R)", 
-      category: "Multi-Agent", 
-      tag: "C++ & ROS",img: p3_img1,
+      category: "Robotics", // Multi-Agent se badal kar Robotics kiya
+      tag: "Automation & Control", 
+      img: p3_img1, // Is image variable ko ensure karein ki ye LFR ki hi ho
       images: [p3_img1],
       videoData: [
-        { url: "https://www.youtube.com/embed/b1flnCoKTQk", title: "Line Follower Robot demo1", type: "Multi-Agent", desc: "Developed a robot that follows a predefined path using line-detection sensors." },
-        { url: "https://www.youtube.com/embed/VHGuBMu89j4", title: "Line Follower Robot demo2", type: "Algorithm", desc: "Smooth motor control for accurate movement." },
-         { url: "https://www.youtube.com/embed/skv1aRM_3tk", title: "Line Follower Robot demo3", type: "Algorithm", desc: "Precise sensor-based path detection." },
-          { url: "https://www.youtube.com/embed/RN_vK3V2ZpM", title: "Line Follower Robot demo4", type: "Algorithm", desc: "Autonomous navigation along a line." }
+        { 
+          url: "https://www.youtube.com/embed/b1flnCoKTQk", 
+          title: "Path Tracking Demo", 
+          type: "Hardware", 
+          desc: "Developed a robot that follows a predefined path using high-sensitivity line-detection sensors." 
+        },
+        { 
+          url: "https://www.youtube.com/embed/VHGuBMu89j4", 
+          title: "Navigation Efficiency", 
+          type: "Algorithm", 
+          desc: "Smooth motor control implementation for accurate movement on complex tracks." 
+        },
+        { 
+          url: "https://www.youtube.com/embed/skv1aRM_3tk", 
+          title: "Sensor Calibration", 
+          type: "Embedded", 
+          desc: "Precise sensor-based path detection for sharp turns and high-speed stability." 
+        },
+        { 
+          url: "https://www.youtube.com/embed/RN_vK3V2ZpM", 
+          title: "Circuit & Logic Overview", 
+          type: "Full Build", 
+          desc: "Autonomous navigation logic showing hardware connections and sensor-motor synchronization." 
+        }
       ],
       detailedDesc: [
-        "Developed a robot that follows a predefined path using line-detection sensors.",
-        "Autonomous navigation along a line.","Precise sensor-based path detection","Smooth motor control for accurate movement.",
-        "Contribution:- Designed control algorithms and sensor integration","             Hardware assembly and coding for path following"
+        "Developed an autonomous robot designed to track and follow a predefined black or white path using IR reflective sensors.",
+        "Implemented real-time sensor processing to distinguish between the path and the background.",
+        "Developed a customized motor control algorithm to ensure smooth movement during sharp turns and path corrections.",
+        "Optimized hardware architecture for consistent power distribution between the microcontroller and DC motors.",
+        "Contribution: Designed the control logic, integrated IR sensor arrays, and handled full hardware assembly and debugging."
       ],
-      techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
+      techStack: ["Arduino", "C++", "IR Sensors", "L298N Motor Driver", "Embedded Systems"] 
     },
-    // Baaki projects 5-10 ko aap isi format mein 'videoData' aur 'images' arrays ke saath update kar sakte hain.
-    { id: 5, title: "WiFi-Controlled Car", category: "Navigation", tag: "IOT", img: p5_img1,
-            images: [p5_img1, p5_img2],
+    
+    { 
+      id: 5, 
+      title: "WiFi-Controlled Car", 
+      category: "IoT & Robotics", // Navigation se badal kar domain specific kiya
+      tag: "Wireless Control", 
+      img: p5_img1,
+      images: [p5_img1, p5_img2],
       videoData: [
-        { url: "https://www.youtube.com/embed/3WBhPUdofrI", title: "WiFi-Controlled Car", type: "IOT", desc: "Remote control through a web interface or mobile app." },
-       
+        { 
+          url: "https://www.youtube.com/embed/3WBhPUdofrI", 
+          title: "WiFi Car Demonstration", 
+          type: "IoT Control", 
+          desc: "Remote control operation through a mobile application and web interface using WiFi protocols." 
+        }
       ],
       detailedDesc: [
-        "Designed a car controlled remotely via WiFi for real-time navigation.",
-        "Remote control through a web interface or mobile app","Real-time response and smooth navigation","Wireless communication over WiFi",
-        "Contribution:- Developed control logic and web-based interface  ","            Integrated hardware components and ensured seamless connectivity",
+        "Designed and built a robotic car controlled remotely via WiFi for real-time navigation and maneuverability.",
+        "Developed a mobile-responsive web interface and integrated app-based controls for seamless operation.",
+        "Implemented low-latency wireless communication over a local WiFi network to ensure real-time response.",
+        "Integrated motor drivers with an ESP micro-controller to manage speed and direction wirelessly.",
+        "Contribution: Developed the backend control logic, designed the web interface, and performed hardware-software integration for stable connectivity."
       ],
-      techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
+      techStack: ["ESP8266/ESP32", "C++", "HTML/CSS (Web Interface)", "Blynk IoT", "L298N Motor Driver"]
     },
-    { id: 6, title: "Smart Vehicle Speed & Distance Monitoring System", category: "Simulation", tag: "Gazebo",img: p6_img1,
-            images: [p6_img1, p6_img2, p6_img3],
+
+    { 
+      id: 6, 
+      title: "Smart Vehicle Speed & Distance Monitoring System", 
+      category: "Embedded Systems", 
+      tag: "Automotive IoT", 
+      img: p6_img1,
+      images: [p6_img1, p6_img2, p6_img3],
       videoData: [
-        { url: "https://www.youtube.com/embed/BcDu86giw_4", title: "Smart Vehicle Speed & Distance Monitoring System", type: "Multi-Agent", desc: "Real-time monitoring of vehicle speed and distance with accurate data acquisition and display." },
-        { url: "https://www.youtube.com/embed/WHNZQjjnDgo", title: "Collision Avoidance", type: "Real-time speed and distance detection.", desc: "Accurate radar-based distance measurement" }
+        { 
+          url: "https://www.youtube.com/embed/BcDu86giw_4", 
+          title: "Real-time Monitoring Demo", 
+          type: "Hardware Integration", 
+          desc: "Live monitoring of vehicle speed and distance with accurate data acquisition and OLED/Serial display." 
+        },
+        { 
+          url: "https://www.youtube.com/embed/WHNZQjjnDgo", 
+          title: "Collision Avoidance Logic", 
+          type: "Radar Sensing", 
+          desc: "Demonstrating accurate radar-based distance measurement for proactive collision avoidance." 
+        }
       ],
       detailedDesc: [
-        "Real-time monitoring of vehicle speed and distance with accurate data acquisition and display.",
-        "Real-time speed and distance detection.", " Wireless data transmission via Bluetooth ","Accurate radar-based distance measurement",
-        "Contribution:- System design, coding, and hardware integration,Testing and debugging",
-        "Components: GPS Module, K2 Pico Radar, HC-05 Bluetooth"
+        "Developed an advanced monitoring system for vehicles to track real-time speed and safe distance from obstacles.",
+        "Integrated a K2 Pico Radar for high-precision distance measurement and object detection.",
+        "Utilized a GPS Module for accurate speed tracking and location data acquisition.",
+        "Implemented wireless data transmission via HC-05 Bluetooth for remote monitoring on mobile devices.",
+        "Contribution: Managed end-to-end system design, sensor fusion coding, and hardware-software debugging to ensure data accuracy.",
+        "Components Used: GPS Module, K2 Pico Radar, HC-05 Bluetooth, and Microcontroller."
       ],
-      techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
+      techStack: ["C++", "Embedded C", "GPS Protocol", "Radar Interfacing", "Bluetooth (HC-05)"] 
     },
-    { id: 7, title: "Dual-Battery Intelligent Power Management System", category: "Power management", tag: "Power controller", img: p7_img1,
-             images: [p7_img1, p7_img2],
+
+  
+    { 
+      id: 7, 
+      title: "Dual-Battery Intelligent Power Management System", 
+      category: "Power Electronics", // Power management se badal kar technical category di
+      tag: "Smart Energy", 
+      img: p7_img1,
+      images: [p7_img1, p7_img2],
       videoData: [
-        { url: "https://www.youtube.com/embed/680hg4BAWEE", title: "Dual-Battery Intelligent Power Management System", type: "Automatic switching between two batteries.", desc: "Manage dual batteries with intelligent power switching to extend battery life." },
-        
+        { 
+          url: "https://www.youtube.com/embed/680hg4BAWEE", 
+          title: "Intelligent Switching Demo", 
+          type: "Automation", 
+          desc: "Demonstrating automatic seamless switching between two battery sources to maintain constant power supply." 
+        }
       ],
       detailedDesc: [
-        "Manage dual batteries with intelligent power switching to extend battery life.",
-        "Automatic switching between two batteries.",
-        "Efficient power management and load balancing.",
-        "Enhanced battery performance and longevity"
+        "Designed an intelligent system to manage dual battery sources with automatic switching logic to prevent power interruption.",
+        "Implemented real-time voltage monitoring to trigger switching when the primary battery falls below a safe threshold.",
+        "Focused on efficient load balancing and power management to significantly extend the overall battery lifecycle.",
+        "Integrated safety features to prevent deep discharge and enhance the longevity of both power units.",
+        "Contribution: Developed the switching algorithm, designed the sensing circuit, and integrated the relay/MOSFET control system."
       ],
-      techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
+      techStack: ["Embedded C", "Arduino/ATmega", "Voltage Sensing", "Relay/MOSFET Logic", "Power Electronics"] // Purane tech stack ko hardware-specific kiya
     },
-    { id: 8, title: "Advanced Breath Analyzer System", category: "Aviation", tag: "Arduino", img: p8_img1,
-            images: [p8_img1, p8_img2, p8_img3],
+
+
+    { 
+      id: 8, 
+      title: "Advanced Breath Analyzer System", 
+      category: "Safety Systems", // Aviation/Safety category ke liye perfect hai
+      tag: "Embedded AI", 
+      img: p8_img1,
+      images: [p8_img1, p8_img2, p8_img3],
       videoData: [
-        { url: "https://www.youtube.com/embed/BcDu86giw_4", title: "Advanced Breath Analyzer System", type: "Multi-Agent", desc: "Accurately detect alcohol levels with advanced calibration features." },
-        
+        { 
+          url: "https://www.youtube.com/embed/BcDu86giw_4", 
+          title: "System Calibration & Testing", 
+          type: "Precision Sensing", 
+          desc: "Accurately detecting alcohol concentration levels using professional-grade fuel cell sensors and calibration algorithms." 
+        }
       ],
       detailedDesc: [
-        "Accurately detect alcohol levels with advanced calibration features.",
-        "Technologies Used:","Microcontroller: Raspberry Pi","Sensors: Fuel Cell Sensor, HX10B Air Pressure Sensor","Additional Components: Pi Camera, Instrumentation Amplifier"
+        "Developed a high-precision breath analyzer system designed for aviation and industrial safety protocols.",
+        "Integrated a Fuel Cell Alcohol Sensor for superior accuracy and an HX10B Air Pressure Sensor to ensure a consistent breath sample.",
+        "Utilized a Pi Camera for user identification and record-keeping during the testing process.",
+        "Implemented signal conditioning using an Instrumentation Amplifier to filter noise and enhance sensor reliability.",
+        "Contribution: Designed the multi-sensor data fusion logic, integrated the Pi Camera for visual verification, and developed the alcohol level calculation algorithm."
       ],
-      techStack: ["C++", "Arduino", "Python", "opencv"]
+      techStack: ["Raspberry Pi", "Python", "OpenCV", "Fuel Cell Technology", "Signal Conditioning"] 
     },
-    { id: 9, title: "Smart Toll Tax System", category: "IOT", tag: "IOT",img: p9_img1 ,
-             images: [p9_img1,p9_img2],
+
+
+    { 
+      id: 9, 
+      title: "Smart Toll Tax System", 
+      category: "IoT", 
+      tag: "Automated Systems", 
+      img: p9_img1,
+      images: [p9_img1, p9_img2],
       videoData: [
-        { url: "https://www.youtube.com/embed/l_SCNzqAhBg", title: "Smart Toll Tax System", type: "Multi-Agent", desc: "Developed an automated toll collection system using Raspberry Pi and Python to streamline toll payments with a QR code scanner for vehicle identification." },
-       
+        { 
+          url: "https://www.youtube.com/embed/l_SCNzqAhBg", 
+          title: "Automated Toll Collection Demo", 
+          type: "Raspberry Pi Project", 
+          desc: "Developed an automated toll collection system using Raspberry Pi and Python to streamline toll payments with a QR code scanner for vehicle identification." 
+        }
       ],
       detailedDesc: [
-        "Developed an automated toll collection system using Raspberry Pi and Python to streamline toll payments with a QR code scanner for vehicle identification.",
-        "QR Code Scanning: Identifies vehicles and links them to registered accounts.",
-        "Contactless Payment: Automatic toll deductions from linked digital wallets.",
-        "Data Logging: Records vehicle data and transaction history for monitoring.",
-        
+        "Developed a smart toll collection solution to eliminate manual queues and automate vehicle processing.",
+        "Implemented QR Code Scanning logic for instant vehicle identification and linking with digital user accounts.",
+        "Integrated a Contactless Payment gateway for automatic toll deduction from registered digital wallets.",
+        "Enabled Real-time Data Logging to maintain precise records of vehicle timestamps and transaction history for administrative monitoring.",
+        "Contribution: Designed the system architecture, developed the Python-based QR processing script, and integrated the gate automation hardware with Raspberry Pi."
       ],
-      techStack: ["C++", "Raspberry pi", "Python", "Multi-Agent Systems"]
+      techStack: ["Raspberry Pi", "Python", "OpenCV", "SQLite (Database)", "QR Code Integration"] 
     },
+
+
     { id: 10, title: "Jetson-Based Quadruped", category: "Embedded", tag: "Jetson Orin",
        desc: "Legged locomotion on edge AI.", img: "https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=600" }
   ]
