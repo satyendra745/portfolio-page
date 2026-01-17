@@ -6,6 +6,8 @@ import p1_img2 from '../assets/images/robot2.jpg';
 import p1_img3 from '../assets/images/profile.jpg';
 import p5_img1 from '../assets/images/Wifi_car2.jpg';
 import p5_img2 from '../assets/images/Wifi_car1.jpg';
+import p7_img1 from '../assets/images/dual_b2.jpg';
+import p7_img2 from '../assets/images/dual_b1.jpg';
 
 export const PORTFOLIO_DATA = {
   profile: {
@@ -306,7 +308,7 @@ export const PORTFOLIO_DATA = {
       techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
     },
     // Baaki projects 5-10 ko aap isi format mein 'videoData' aur 'images' arrays ke saath update kar sakte hain.
-    { id: 5, title: "WiFi-Controlled Car", category: "Navigation", tag: "IOT", img: "https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=600",
+    { id: 5, title: "WiFi-Controlled Car", category: "Navigation", tag: "IOT", img: p5_img1,
             images: [p5_img1, p5_img2],
       videoData: [
         { url: "https://www.youtube.com/embed/3WBhPUdofrI", title: "WiFi-Controlled Car", type: "IOT", desc: "Remote control through a web interface or mobile app." },
@@ -333,11 +335,11 @@ export const PORTFOLIO_DATA = {
       ],
       techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
     },
-    { id: 7, title: "Dual-Battery Intelligent Power Management System", category: "IoT", tag: "MQTT",
-             images: [p1_img1, p1_img2, p1_img3],
+    { id: 7, title: "Dual-Battery Intelligent Power Management System", category: "Power management", tag: "Power controller", img: p7_img1,
+             images: [p7_img1, p1_img2],
       videoData: [
-        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
-        { url: p1_vid2, title: "testing", type: "Algorithm", desc: "Decentralized control for swarm navigation." }
+        { url: "https://www.youtube.com/embed/680hg4BAWEE", title: "Dual-Battery Intelligent Power Management System", type: "Automatic switching between two batteries.", desc: "Manage dual batteries with intelligent power switching to extend battery life." },
+        
       ],
       detailedDesc: [
         "Manage dual batteries with intelligent power switching to extend battery life.",
