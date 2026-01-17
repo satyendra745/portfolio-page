@@ -148,6 +148,26 @@ export default function App() {
           </div>
         </section>
 
+        {/* Training Section */}
+        <section id="training" className="p-12 lg:p-24 border-t border-white/5 bg-[#010409]/40">
+          <h2 className="text-4xl font-extrabold mb-12 border-b-4 border-[#0ea5e9] inline-block pb-2">Training & Certifications</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl">
+            {PORTFOLIO_DATA.training.map((t, idx) => (
+              <div key={idx} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-[#0ea5e9]/50 transition-all">
+                <h3 className="text-xl font-bold text-white">{t.course}</h3>
+                <p className="text-[#0ea5e9] text-sm font-semibold mb-3">{t.company} | {t.period}</p>
+                <ul className="space-y-1">
+                  {t.tasks.map((task, i) => (
+                    <li key={i} className="text-gray-400 text-sm flex gap-2">
+                      <span className="text-[#0ea5e9]">▹</span> {task}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* PROJECTS SECTION */}
         <section id="projects" className="p-12 lg:p-24 border-t border-white/5">
           <h2 className="text-4xl font-extrabold mb-12 border-b-4 border-[#0ea5e9] inline-block pb-2">Featured Projects</h2>
