@@ -23,6 +23,9 @@ import p11_img2 from '../assets/images/gpsT2.jpg';
 import p12_img1 from '../assets/images/plantM1.jpg';
 import p12_img2 from '../assets/images/plantM2.jpg';
 import p3_img1 from '../assets/images/lineF1.jpg';
+import p13_img2 from '../assets/images/homeA2.jpg';
+import p13_img1 from '../assets/images/homeA1.jpg';
+
 export const PORTFOLIO_DATA = {
   profile: {
     name: "Satyendra",
@@ -211,12 +214,14 @@ export const PORTFOLIO_DATA = {
       id: 13, 
       title: "Home Automation System", 
       category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      tag: "SLAM & ROS 2", img:p13_img1,
+      images: [p13_img1, p13_img2],
       videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+        { url: "https://www.youtube.com/embed/MOgD9fDkweE", title: " Demo1", type: "IOT", desc: "Developed an IoT-based system to control home appliances remotely, including IR remote control and fan speed regulation." },
+        { url: "https://www.youtube.com/embed/lsNRD4dlSf4", title: "Detection", type: "NVIDIA Jetson", desc: " Remote control of lights, fans, and appliances." },
+        { url: "https://www.youtube.com/embed/fYRX1bTbIYI", title: "YouTube Demo", type: "Real World", desc: "Fan Regulator: Adjust fan speed remotely." },
+        { url: "https://www.youtube.com/embed/R0-T2Mnm6QY", title: "YouTube Demo", type: "Real World", desc: "IR Control: Manage appliances using IR signals (e.g., TV, AC, FAN)." },
+       
       ],
       detailedDesc: [
         "Developed an IoT-based system to control home appliances remotely, including IR remote control and fan speed regulation.",
@@ -305,15 +310,17 @@ export const PORTFOLIO_DATA = {
       id: 4, 
       title: "Line Follower Robot (L.F.R)", 
       category: "Multi-Agent", 
-      tag: "C++ & ROS",
-      images: [p1_img1, p1_img2, p1_img3],
+      tag: "C++ & ROS",img: p3_img1,
+      images: [p3_img1],
       videoData: [
-        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
-        { url: p1_vid2, title: "Collision Avoidance", type: "Algorithm", desc: "Decentralized control for swarm navigation." }
+        { url: "https://www.youtube.com/embed/b1flnCoKTQk", title: "Line Follower Robot demo1", type: "Multi-Agent", desc: "Developed a robot that follows a predefined path using line-detection sensors." },
+        { url: "https://www.youtube.com/embed/VHGuBMu89j4", title: "Line Follower Robot demo2", type: "Algorithm", desc: "Smooth motor control for accurate movement." },
+         { url: "https://www.youtube.com/embed/skv1aRM_3tk", title: "Line Follower Robot demo3", type: "Algorithm", desc: "Precise sensor-based path detection." },
+          { url: "https://www.youtube.com/embed/RN_vK3V2ZpM", title: "Line Follower Robot demo4", type: "Algorithm", desc: "Autonomous navigation along a line." }
       ],
       detailedDesc: [
         "Developed a robot that follows a predefined path using line-detection sensors.",
-        "Autonomous navigation along a line,","Precise sensor-based path detection","Smooth motor control for accurate movement",
+        "Autonomous navigation along a line.","Precise sensor-based path detection","Smooth motor control for accurate movement.",
         "Contribution:- Designed control algorithms and sensor integration","             Hardware assembly and coding for path following"
       ],
       techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
