@@ -113,7 +113,7 @@ export const PORTFOLIO_DATA = {
       tag: "PyTorch",
       images: [p1_img1, p1_img2],
       videoData: [
-        { url: p1_vid1, title: "Real-time Detection", type: "NVIDIA Jetson", desc: "YOLOv8 deployment on edge hardware." },
+        { url: p1_vid1, p1_vid2, p1_vid1, title: "Real-time Detection", type: "NVIDIA Jetson", desc: "YOLOv8 deployment on edge hardware." },
         { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "Tracking Demo", type: "Computer Vision", desc: "Multi-object tracking in dynamic urban environments." }
       ],
       detailedDesc: [
