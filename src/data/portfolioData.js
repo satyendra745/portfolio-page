@@ -25,6 +25,27 @@ import p12_img2 from '../assets/images/plantM2.jpg';
 import p3_img1 from '../assets/images/lineF1.jpg';
 import p13_img2 from '../assets/images/homeA2.jpg';
 import p13_img1 from '../assets/images/homeA1.jpg';
+import p14_img1 from '../assets/images/robot1.jpg';
+import p14_img2 from '../assets/images/robot2.jpg';
+import p15_img1 from '../assets/images/robot1.jpg';
+import p15_img2 from '../assets/images/robot2.jpg';
+import p16_img1 from '../assets/images/robot1.jpg';
+import p16_img2 from '../assets/images/robot2.jpg';
+import p17_img1 from '../assets/images/robot1.jpg';
+import p17_img2 from '../assets/images/robot2.jpg';
+import p18_img1 from '../assets/images/robot1.jpg';
+import p18_img2 from '../assets/images/robot2.jpg';
+import p19_img1 from '../assets/images/robot1.jpg';
+import p19_img2 from '../assets/images/robot2.jpg';
+import p20_img1 from '../assets/images/robot1.jpg';
+import p20_img2 from '../assets/images/robot2.jpg';
+import p21_img1 from '../assets/images/robot1.jpg';
+import p21_img2 from '../assets/images/robot2.jpg';
+
+import p22_img1 from '../assets/images/robot1.jpg';
+import p22_img2 from '../assets/images/robot2.jpg';
+import p23_img1 from '../assets/images/robot1.jpg';
+import p23_img2 from '../assets/images/robot2.jpg';
 
 export const PORTFOLIO_DATA = {
   profile: {
@@ -110,8 +131,9 @@ export const PORTFOLIO_DATA = {
       ],
       techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
     },
+
         { 
-      id: 18, 
+      id: 28, 
       title: "Autonomous AMR Navigation", 
       category: "Robotics", 
       tag: "SLAM & ROS 2", 
@@ -131,11 +153,217 @@ export const PORTFOLIO_DATA = {
     },
 
         { 
-      id: 17, 
+      id: 27, 
       title: "Autonomous AMR Navigation", 
       category: "Robotics", 
       tag: "SLAM & ROS 2", 
       images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+        { 
+      id: 26, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+
+        { 
+      id: 25, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+
+        { 
+      id: 24, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+        { 
+      id: 23, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+        { 
+      id: 22, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+        { 
+      id: 21, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+      { 
+        id: 20, 
+        title: "Autonomous AMR Navigation", 
+        category: "Robotics", 
+        tag: "SLAM & ROS 2", 
+        images: [p1_img1, p1_img2, p1_img3,p1_img3],
+        videoData: [
+          { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+          { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+          { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+        ],
+        detailedDesc: [
+          "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+          "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+          "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+          "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+        ],
+        techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+      },
+        { 
+      id: 19, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+    { 
+      id: 18, 
+      title: "Bipedal Robot Walking Simulation & Control", 
+      category: "Robotics", 
+      tag: "Legged Locomotion", 
+      img: p18_img1, 
+      images: [p18_img1, p18_img2],
+      videoData: [
+        { 
+          url: "https://www.youtube.com/embed/ro-cJp_Rg3M", // Example URL
+          title: "Bipedal Locomotion Demo", 
+          type: "Simulation", 
+          desc: "Bipedal walking gait execution in PyBullet environment using advanced control algorithms." 
+        }
+      ],
+      detailedDesc: [
+        "Developed a high-fidelity simulation of a Bipedal Robot in PyBullet to achieve stable and human-like walking gaits.",
+        "Implemented Model Predictive Control (MPC) to predict future states and optimize ground reaction forces for balance.",
+        "Designed a custom Gait Generator to manage the swing and stance phases of the legs, ensuring rhythmic and stable locomotion.",
+        "Utilized PID Controllers for precise joint-level position and torque control, compensating for dynamic disturbances.",
+        "Integrated Inverse Kinematics (IK) to calculate required joint angles based on the desired center of mass (CoM) trajectory.",
+        "Contribution: Developed the full control pipeline, tuned gait parameters for stability, and performed physics-based validation in PyBullet."
+      ],
+      techStack: ["PyBullet", "Python", "MPC", "PID Control", "Inverse Kinematics", "Gait Generation"]
+    },
+
+        { 
+      id: 17, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2],
       videoData: [
         { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
         { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
@@ -156,7 +384,7 @@ export const PORTFOLIO_DATA = {
       category: "Robotics", 
       tag: "Full-Stack Robotics", 
       img: p16_img1, 
-      images: [p16_img1, p16_img2, p16_img3],
+      images: [p16_img1, p16_img2],
       videoData: [
         { 
           url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
