@@ -141,11 +141,75 @@ export const PORTFOLIO_DATA = {
       techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
     },
     // Baaki projects 5-10 ko aap isi format mein 'videoData' aur 'images' arrays ke saath update kar sakte hain.
-    { id: 5, title: "Pick & Place Automation", category: "Manipulation", tag: "MoveIt 2", desc: "Industrial arm trajectory control.", img: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?q=80&w=600" },
-    { id: 6, title: "Digital Twin Environment", category: "Simulation", tag: "Gazebo", desc: "Digital twin for warehouse robots.", img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600" },
-    { id: 7, title: "Telepresence Robot", category: "IoT", tag: "MQTT", desc: "Remote controlled IoT platform.", img: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=600" },
-    { id: 8, title: "Autonomous Drone Delivery", category: "Aviation", tag: "PX4", desc: "GPS-based autonomous flight.", img: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=600" },
-    { id: 9, title: "Robot Voice Command AI", category: "NLP", tag: "LangChain", desc: "Voice activated control via LLM.", img: "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?q=80&w=600" },
-    { id: 10, title: "Jetson-Based Quadruped", category: "Embedded", tag: "Jetson Orin", desc: "Legged locomotion on edge AI.", img: "https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=600" }
+    { id: 5, title: "Pick & Place Automation", category: "Manipulation", tag: "MoveIt 2", 
+            images: [p1_img1, p1_img2, p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
+        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
+        { url: p1_vid2, title: "Collision Avoidance", type: "Algorithm", desc: "Decentralized control for swarm navigation." },
+        { url: p1_vid2, title: "Collision Avoidance", type: "Algorithm", desc: "Decentralized control for swarm navigation." }
+      ],
+      detailedDesc: [
+        "Implemented decentralized path planning for multi-robot systems.",
+        "Integrated ROS 2 for seamless inter-robot communication.",
+        "Designed scalable architecture for large-scale robot swarms."
+      ],
+      techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
+    },
+    { id: 6, title: "Digital Twin Environment", category: "Simulation", tag: "Gazebo",
+            images: [p1_img1, p1_img2, p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
+        { url: p1_vid2, title: "Collision Avoidance", type: "Algorithm", desc: "Decentralized control for swarm navigation." }
+      ],
+      detailedDesc: [
+        "Implemented decentralized path planning for multi-robot systems.",
+        "Integrated ROS 2 for seamless inter-robot communication.",
+        "Designed scalable architecture for large-scale robot swarms."
+      ],
+      techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
+    },
+    { id: 7, title: "Telepresence Robot", category: "IoT", tag: "MQTT",
+             images: [p1_img1, p1_img2, p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
+        { url: p1_vid2, title: "Collision Avoidance", type: "Algorithm", desc: "Decentralized control for swarm navigation." }
+      ],
+      detailedDesc: [
+        "Implemented decentralized path planning for multi-robot systems.",
+        "Integrated ROS 2 for seamless inter-robot communication.",
+        "Designed scalable architecture for large-scale robot swarms."
+      ],
+      techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
+    },
+    { id: 8, title: "Autonomous Drone Delivery", category: "Aviation", tag: "PX4", 
+            images: [p1_img1, p1_img2, p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
+        { url: p1_vid2, title: "Collision Avoidance", type: "Algorithm", desc: "Decentralized control for swarm navigation." }
+      ],
+      detailedDesc: [
+        "Implemented decentralized path planning for multi-robot systems.",
+        "Integrated ROS 2 for seamless inter-robot communication.",
+        "Designed scalable architecture for large-scale robot swarms."
+      ],
+      techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
+    },
+    { id: 9, title: "Robot Voice Command AI", category: "NLP", tag: "LangChain",img: "https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=600" ,
+             images: [p1_img1, p1_img2, p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
+        { url: p1_vid2, title: "Collision Avoidance", type: "Algorithm", desc: "Decentralized control for swarm navigation." }
+      ],
+      detailedDesc: [
+        "Implemented decentralized path planning for multi-robot systems.",
+        "Integrated ROS 2 for seamless inter-robot communication.",
+        "Designed scalable architecture for large-scale robot swarms.",
+        
+      ],
+      techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
+    },
+    { id: 10, title: "Jetson-Based Quadruped", category: "Embedded", tag: "Jetson Orin",
+       desc: "Legged locomotion on edge AI.", img: "https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=600" }
   ]
 };
