@@ -89,9 +89,169 @@ export const PORTFOLIO_DATA = {
       ],
       techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
     },
+        { 
+      id: 18, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+        { 
+      id: 17, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+        { 
+      id: 16, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+        { 
+      id: 15, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+        { 
+      id: 14, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+        { 
+      id: 13, 
+      title: "Home Automation System", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Developed an IoT-based system to control home appliances remotely, including IR remote control and fan speed regulation.",
+        "Remote control of lights, fans, and appliances.","IR Control: Manage appliances using IR signals (e.g., TV, AC, FAN).",
+        "Fan Regulator: Adjust fan speed remotely.","Voice control via Google Assistant.",
+        "Contribution: Developed control logic for IR and fan regulation; Integrated hardware components and configured IoT platform."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+        { 
+      id: 12, 
+      title: "Plant Monitoring System", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Designed a system to monitor soil moisture and environmental conditions for healthy plant growth.",
+        "Real-time soil moisture and environmental data monitoring.","Alerts for low moisture or adverse conditions.",
+        "Remote data access via a web or mobile interface.",
+        "Contribution: Developed sensor integration and data logging; Configured WiFi communication for remote monitoring."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
+        { 
+      id: 11, 
+      title: "Multi-Control Emergency Light & Location Tracking System", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      videoData: [
+        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
+        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
+        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+      ],
+      detailedDesc: [
+        "Design an emergency light system with multi-control features and integrated location tracking for enhanced safety.",
+        "Multi-control emergency lighting.","Real-time location tracking via GPS.","Remote communication using GSM.",
+        "Contribution: System design, coding, and hardware integration; Implemented location tracking and safety features.",
+        
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+
     { 
       id: 2, 
-      title: "Humanoid Balance Control", 
+      title: "LiDAR Data Acquisition & Storage System", 
       category: "AI", 
       tag: "Mujoco", 
       images: [p1_img1, p1_img2],
@@ -102,9 +262,9 @@ export const PORTFOLIO_DATA = {
         { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "Live Feedback", type: "System Log", desc: "Real-time data visualization of joints." }
       ],
       detailedDesc: [
-        "Implemented Mujoco for high-fidelity physics simulation.",
-        "Integrated reinforcement learning for stable locomotion gait.",
-        "Optimized joint control for smooth humanoid movement."
+        "Collect and store LiDAR data for applications like navigation and object.","Real-time LiDAR data collection.","Data storage for analysis and processing.",
+        "Efficient SPI communication for high-speed data transfer.",
+        "Contribution: System implementation and coding; Hardware integration and data storage management."
       ],
       techStack: ["Python", "Mujoco", "PyTorch", "Deep RL"]
     },
