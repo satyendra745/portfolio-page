@@ -1,3 +1,8 @@
+import p1_vid1 from '../assets/videos/demo1.mp4';
+import p1_img1 from '../assets/images/robot1.jpg';
+import p1_img2 from '../assets/images/robot2.jpg';
+
+
 export const PORTFOLIO_DATA = {
   profile: {
     name: "Satyendra",
@@ -79,6 +84,21 @@ export const PORTFOLIO_DATA = {
     ],
     techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
   },
+  {
+    id: 11, 
+      title: "Autonomous AMR Navigation", 
+      category: "Robotics", 
+      tag: "SLAM & ROS 2", 
+      // Multi-media arrays
+      videos: [p1_vid1, "https://www.youtube.com/embed/ro-cJp_Rg3M"], // Local + YouTube
+      images: [p1_img1, p1_img2],
+      detailedDesc: [
+        "Implemented Gmapping for real-time SLAM.",
+        "Integrated LiDAR for obstacle avoidance."
+      ],
+      techStack: ["ROS 2", "Python", "LiDAR"]
+    },
+
     { id: 2, title: "Humanoid Balance Control", category: "AI", tag: "Mujoco", desc: "Bipedal stability using RL.", img: "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=600" },
     { id: 3, title: "Edge-AI Object Tracking", category: "Vision", tag: "PyTorch", desc: "Object detection on Jetson Nano.", img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=600" },
     { id: 4, title: "Robot Swarm Coordination", category: "Multi-Agent", tag: "C++ & ROS", desc: "Multi-robot path planning.", img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600" },
