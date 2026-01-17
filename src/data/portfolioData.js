@@ -13,6 +13,9 @@ import p2_img2 from '../assets/images/Lidar_d1.jpg';
 import p8_img1 from '../assets/images/breath1.jpg';
 import p8_img2 from '../assets/images/breath2.jpg';
 import p8_img3 from '../assets/images/breath3.jpg';
+import p6_img1 from '../assets/images/smartV1.jpg';
+import p6_img2 from '../assets/images/smartV2.jpg';
+import p6_img3 from '../assets/images/smartV3.jpg';
 
 export const PORTFOLIO_DATA = {
   profile: {
@@ -326,11 +329,11 @@ export const PORTFOLIO_DATA = {
       ],
       techStack: ["C++", "ROS 2", "Python", "Multi-Agent Systems"]
     },
-    { id: 6, title: "Smart Vehicle Speed & Distance Monitoring System", category: "Simulation", tag: "Gazebo",
-            images: [p1_img1, p1_img2, p1_img3],
+    { id: 6, title: "Smart Vehicle Speed & Distance Monitoring System", category: "Simulation", tag: "Gazebo",img: p6_img1,
+            images: [p6_img1, p6_img2, p6_img3],
       videoData: [
-        { url: p1_vid1, title: "Swarm Logic", type: "Multi-Agent", desc: "Coordinated path planning for 10+ robots." },
-        { url: p1_vid2, title: "Collision Avoidance", type: "Algorithm", desc: "Decentralized control for swarm navigation." }
+        { url: "https://www.youtube.com/embed/BcDu86giw_4", title: "Smart Vehicle Speed & Distance Monitoring System", type: "Multi-Agent", desc: "Real-time monitoring of vehicle speed and distance with accurate data acquisition and display." },
+        { url: "https://www.youtube.com/embed/WHNZQjjnDgo", title: "Collision Avoidance", type: "Real-time speed and distance detection.", desc: "Accurate radar-based distance measurement" }
       ],
       detailedDesc: [
         "Real-time monitoring of vehicle speed and distance with accurate data acquisition and display.",
