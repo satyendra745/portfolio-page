@@ -1,6 +1,8 @@
 import p1_vid1 from '../assets/videos/demo1.mp4';
 import p1_img1 from '../assets/images/robot1.jpg';
 import p1_img2 from '../assets/images/robot2.jpg';
+import p1_vid2 from '../assets/videos/video2.mp4';
+import p1_img3 from '../assets/images/profile.jpg';
 
 
 export const PORTFOLIO_DATA = {
@@ -73,8 +75,10 @@ export const PORTFOLIO_DATA = {
     title: "Autonomous AMR Navigation", 
     category: "Robotics", 
     tag: "SLAM & ROS 2", 
-    videoUrl: "https://www.youtube.com/embed/ro-cJp_Rg3M",
-    img: "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?q=80&w=600",
+    // videoUrl: "https://www.youtube.com/embed/ro-cJp_Rg3M",
+    // img: "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?q=80&w=600",
+    videos: [p1_vid1, "https://www.youtube.com/embed/ro-cJp_Rg3M"], // Local + YouTube
+    images: [p1_img1, p1_img2,p1_img3],
     // Detailed description ko array mein rakha hai
     detailedDesc: [
       "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
@@ -90,18 +94,57 @@ export const PORTFOLIO_DATA = {
       category: "Robotics", 
       tag: "SLAM & ROS 2", 
       // Multi-media arrays
-      videos: [p1_vid1, "https://www.youtube.com/embed/ro-cJp_Rg3M"], // Local + YouTube
-      images: [p1_img1, p1_img2],
-      detailedDesc: [
-        "Implemented Gmapping for real-time SLAM.",
-        "Integrated LiDAR for obstacle avoidance."
-      ],
-      techStack: ["ROS 2", "Python", "LiDAR"]
-    },
+    videos: [p1_vid1, "https://www.youtube.com/embed/ro-cJp_Rg3M"], // Local + YouTube
+    images: [p1_img1, p1_img2],
+    // Detailed description ko array mein rakha hai
+    detailedDesc: [
+      "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+      "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+      "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+      "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+    ],
+    techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+  },
 
-    { id: 2, title: "Humanoid Balance Control", category: "AI", tag: "Mujoco", desc: "Bipedal stability using RL.", img: "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=600" },
-    { id: 3, title: "Edge-AI Object Tracking", category: "Vision", tag: "PyTorch", desc: "Object detection on Jetson Nano.", img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=600" },
-    { id: 4, title: "Robot Swarm Coordination", category: "Multi-Agent", tag: "C++ & ROS", desc: "Multi-robot path planning.", img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600" },
+    { id: 2, 
+        title: "Humanoid Balance Control",
+        category: "AI",
+        tag: "Mujoco",
+        videos: [p1_vid1,p1_vid2, "https://www.youtube.com/embed/ro-cJp_Rg3M"], // Local + YouTube
+        images: [p1_img1, p1_img2],
+      // Detailed description ko array mein rakha hai
+      detailedDesc: [
+        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+      ],
+      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+    },
+    { id: 3, title: "Edge-AI Object Tracking", category: "Vision", tag: "PyTorch",
+         videos: [p1_vid1, "https://www.youtube.com/embed/ro-cJp_Rg3M"], // Local + YouTube
+    images: [p1_img1, p1_img2],
+    // Detailed description ko array mein rakha hai
+    detailedDesc: [
+      "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+      "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+      "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+      "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+    ],
+    techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+  },
+    { id: 4, title: "Robot Swarm Coordination", category: "Multi-Agent", tag: "C++ & ROS",
+          videos: [p1_vid1,p1_vid2, "https://www.youtube.com/embed/ro-cJp_Rg3M"], // Local + YouTube
+    images: [p1_img1, p1_img2,p1_img3],
+    // Detailed description ko array mein rakha hai
+    detailedDesc: [
+      "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
+      "Integrated TEB Local Planner for dynamic obstacle avoidance.",
+      "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
+      "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+    ],
+    techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+  },
     { id: 5, title: "Pick & Place Automation", category: "Manipulation", tag: "MoveIt 2", desc: "Industrial arm trajectory control.", img: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?q=80&w=600" },
     { id: 6, title: "Digital Twin Environment", category: "Simulation", tag: "Gazebo", desc: "Digital twin for warehouse robots.", img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600" },
     { id: 7, title: "Telepresence Robot", category: "IoT", tag: "MQTT", desc: "Remote controlled IoT platform.", img: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=600" },
