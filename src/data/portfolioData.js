@@ -27,20 +27,20 @@ import p13_img2 from '../assets/images/homeA2.jpg';
 import p13_img1 from '../assets/images/homeA1.jpg';
 import p14_img1 from '../assets/images/robot1.jpg';
 import p14_img2 from '../assets/images/robot2.jpg';
-import p15_img1 from '../assets/images/robot1.jpg';
-import p15_img2 from '../assets/images/robot2.jpg';
+import p15_img1 from '../assets/images/AkerM1.jpg';
+import p15_img2 from '../assets/images/3d Navigation.jpg';
 import p16_img1 from '../assets/images/3D-Lidar-mapping.jpg';
 import p16_img2 from '../assets/images/3dMapping1.jpg';
-import p17_img1 from '../assets/images/robot1.jpg';
-import p17_img2 from '../assets/images/robot2.jpg';
-import p18_img1 from '../assets/images/robot1.jpg';
-import p18_img2 from '../assets/images/robot2.jpg';
+import p17_img1 from '../assets/images/RoboticArmSim.jpg';
+// import p17_img2 from '../assets/images/robot2.jpg';
+import p18_img1 from '../assets/images/BipedR.jpg';
+// import p18_img2 from '../assets/images/robot2.jpg';
 import p19_img1 from '../assets/images/gesture_hand1.jpg';
 import p19_img2 from '../assets/images/robot2.jpg';
-import p20_img1 from '../assets/images/robot1.jpg';
-import p20_img2 from '../assets/images/robot2.jpg';
-import p21_img1 from '../assets/images/robot1.jpg';
-import p21_img2 from '../assets/images/robot2.jpg';
+import p20_img1 from '../assets/images/gesture_imu.jpg';
+// import p20_img2 from '../assets/images/robot2.jpg';
+import p21_img1 from '../assets/images/RobticA.jpg';
+// import p21_img2 from '../assets/images/robot2.jpg';
 
 import p22_img1 from '../assets/images/robot1.jpg';
 import p22_img2 from '../assets/images/robot2.jpg';
@@ -235,10 +235,10 @@ export const PORTFOLIO_DATA = {
       category: "Robotics & AI", 
       tag: "Computer Vision", 
       img: p21_img1, 
-      images: [p21_img1, p21_img2],
+      images: [p21_img1],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          url: "https://www.youtube.com/embed/Xve4OhukGK0", // Dummy URL
           title: "Real-World Autonomous Task", 
           type: "Hardware", 
           desc: "Demonstrating fully autonomous object detection, localization, and pick-and-place execution using a real robotic arm." 
@@ -262,7 +262,7 @@ export const PORTFOLIO_DATA = {
       category: "Wearable Tech", 
       tag: "Sensor Fusion", 
       img: p20_img1, 
-      images: [p20_img1, p20_img2],
+      images: [p20_img1],
       videoData: [
         { 
           url: "https://www.youtube.com/embed/S3SXXUCHBi0", // Dummy URL
@@ -316,7 +316,7 @@ export const PORTFOLIO_DATA = {
       category: "Robotics", 
       tag: "Legged Locomotion", 
       img: p18_img1, 
-      images: [p18_img1, p18_img2],
+      images: [p18_img1],
       videoData: [
         { 
           url: "https://www.youtube.com/embed/fFPTa2rVziM", // Example URL
@@ -342,7 +342,7 @@ export const PORTFOLIO_DATA = {
       category: "Robotics", 
       tag: "Manipulation & Control", 
       img: p17_img1,
-      images: [p17_img1, p17_img2],
+      images: [p17_img1],
       videoData: [
         { 
           url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
