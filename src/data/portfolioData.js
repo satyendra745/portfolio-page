@@ -25,8 +25,8 @@ import p12_img2 from '../assets/images/plantM2.jpg';
 import p3_img1 from '../assets/images/lineF1.jpg';
 import p13_img2 from '../assets/images/homeA2.jpg';
 import p13_img1 from '../assets/images/homeA1.jpg';
-import p14_img1 from '../assets/images/robot1.jpg';
-import p14_img2 from '../assets/images/robot2.jpg';
+import p14_img1 from '../assets/images/2dNavigation.jpg';
+// import p14_img2 from '../assets/images/robot2.jpg';
 import p15_img1 from '../assets/images/AkerM1.jpg';
 import p15_img2 from '../assets/images/3d Navigation.jpg';
 import p16_img1 from '../assets/images/3D-Lidar-mapping.jpg';
@@ -36,7 +36,7 @@ import p17_img1 from '../assets/images/RoboticArmSim.jpg';
 import p18_img1 from '../assets/images/BipedR.jpg';
 // import p18_img2 from '../assets/images/robot2.jpg';
 import p19_img1 from '../assets/images/gesture_hand1.jpg';
-import p19_img2 from '../assets/images/robot2.jpg';
+// import p19_img2 from '../assets/images/robot2.jpg';
 import p20_img1 from '../assets/images/gesture_imu.jpg';
 // import p20_img2 from '../assets/images/robot2.jpg';
 import p21_img1 from '../assets/images/RoboticA.jpg';
@@ -184,10 +184,10 @@ export const PORTFOLIO_DATA = {
       category: "Robotics Manipulation", 
       tag: "Mechatronics", 
       img: p23_img1, 
-      images: [p23_img1, p23_img2],
+      images: [p23_img1],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          url: "https://www.youtube.com/embed/Xve4OhukGK0",
           title: "Hand Task Execution", 
           type: "Hardware", 
           desc: "Demonstrating predefined tasks like grasping, waving, and object holding using a humanoid robotic hand." 
@@ -238,7 +238,7 @@ export const PORTFOLIO_DATA = {
       images: [p21_img1],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/Xve4OhukGK0", // Dummy URL
+          url: "https://www.youtube.com/embed/Xve4OhukGK0", 
           title: "Real-World Autonomous Task", 
           type: "Hardware", 
           desc: "Demonstrating fully autonomous object detection, localization, and pick-and-place execution using a real robotic arm." 
@@ -265,7 +265,7 @@ export const PORTFOLIO_DATA = {
       images: [p20_img1],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/S3SXXUCHBi0", // Dummy URL
+          url: "https://www.youtube.com/embed/S3SXXUCHBi0",
           title: "Real-time Hybrid Control", 
           type: "Hardware & Sim", 
           desc: "Controlling a virtual and physical hand using IMU for forearm rotation and Vision for finger tracking." 
@@ -290,10 +290,10 @@ export const PORTFOLIO_DATA = {
         category: "Computer Vision", 
         tag: "Human-Computer Interaction", 
         img: p19_img1, 
-        images: [p19_img1, p19_img2],
+        images: [p19_img1],
         videoData: [
           { 
-            url: "https://www.youtube.com/embed/cpDpGdSvcbQ", // Dummy URL
+            url: "https://www.youtube.com/embed/cpDpGdSvcbQ", 
             title: "Hand Gesture Recognition Demo", 
             type: "Computer Vision", 
             desc: "Real-time finger movement tracking and gesture recognition using MediaPipe and OpenCV." 
@@ -319,7 +319,7 @@ export const PORTFOLIO_DATA = {
       images: [p18_img1],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/fFPTa2rVziM", // Example URL
+          url: "https://www.youtube.com/embed/fFPTa2rVziM",
           title: "Bipedal Locomotion Demo", 
           type: "Simulation", 
           desc: "Bipedal walking gait execution in PyBullet environment using advanced control algorithms." 
@@ -371,13 +371,13 @@ export const PORTFOLIO_DATA = {
       images: [p16_img1, p16_img2],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/VtB6pR2EQ9o", // Dummy URL
+          url: "https://www.youtube.com/embed/VtB6pR2EQ9o", 
           title: "Isaac Sim 3D Mapping", 
           type: "Simulation", 
           desc: "Full system testing in Isaac Sim showing 3D point-cloud generation and 2D occupancy grid mapping." 
         },
         { 
-          url: "https://www.youtube.com/embed/I2cqL9m8MpA", // Dummy URL
+          url: "https://www.youtube.com/embed/I2cqL9m8MpA", 
           title: "RTAB-Map SLAM Demo", 
           type: "SLAM Stack", 
           desc: "Real-time 3D SLAM using RTAB-Map with 3D LiDAR for loop closure and localization." 
@@ -404,7 +404,7 @@ export const PORTFOLIO_DATA = {
       images: [p15_img1, p15_img2],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/ta2KY15Wa2E", // Dummy URL
+          url: "https://www.youtube.com/embed/ta2KY15Wa2E",
           title: "Isaac Sim 3D Simulation", 
           type: "Simulation", 
           desc: "Simulating an Ackermann steering robot in a 3D environment using Isaac Sim with Depth Camera and LiDAR." 
@@ -432,7 +432,7 @@ export const PORTFOLIO_DATA = {
       category: "Robotics", 
       tag: "Isaac Sim & ROS 2", 
       img: p14_img1, 
-      images: [p14_img1, p14_img2],
+      images: [p14_img1],
       videoData: [
         // { 
         //   url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL (Aap baad mein change kar sakte hain)
@@ -441,7 +441,7 @@ export const PORTFOLIO_DATA = {
         //   desc: "Simulating a mobile robot in a photorealistic environment using NVIDIA Isaac Sim with LiDAR integration." 
         // },
         { 
-          url: "https://www.youtube.com/embed/6U82FyS4Jc4", // Dummy URL
+          url: "https://www.youtube.com/embed/6U82FyS4Jc4",
           title: "Nav2 & Rviz2 Visualization", 
           type: "ROS 2 Stack", 
           desc: "Real-time path planning and costmap generation visualized in Rviz2 using the Nav2 framework." 
