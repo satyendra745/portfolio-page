@@ -114,223 +114,168 @@ export const PORTFOLIO_DATA = {
   projects: [
     { 
       id: 1, 
-      title: "Autonomous AMR Navigation", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      title: "RL-Based Robotic Arm Training & Inference", 
+      category: "AI & Simulation", 
+      tag: "Reinforcement Learning", 
+      img: p23_img1, 
+      images: [p1_img1, p1_img2],
       videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+        { 
+          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          title: "RL Training in Isaac Sim", 
+          type: "AI Training", 
+          desc: "Massively parallel training of a robotic arm using Isaac Gym and PPO algorithm for reach-and-grasp tasks." 
+        },
+        { 
+          url: "https://www.youtube.com/embed/lsNRD4dlSf4", // Dummy URL
+          title: "Model Inference Testing", 
+          type: "Testing", 
+          desc: "Validating the trained neural network model in a high-fidelity simulation environment." 
+        }
       ],
       detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+        "Leveraged NVIDIA Isaac Sim and Isaac Gym for massively parallel Reinforcement Learning (RL) training of a robotic arm.",
+        "Implemented the Proximal Policy Optimization (PPO) algorithm to train the agent for complex manipulation tasks like reaching and precise object grasping.",
+        "Configured a high-dimensional observation space including joint positions, velocities, and end-effector distance to the target.",
+        "Performed Model Inference Testing by deploying the trained .pt/.onnx weights back into the simulation to validate success rates and behavior robustness.",
+        "Utilized the Isaac Sim-to-ROS 2 bridge to test the trained policy's compatibility with standard robotics communication protocols.",
+        "Contribution: Designed the reward function logic, managed the training environment setup, and optimized hyperparameters for faster convergence."
       ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+      techStack: ["NVIDIA Isaac Sim", "Isaac Gym", "PyTorch", "Reinforcement Learning (PPO)", "Python", "ROS 2"]
     },
+  
 
-        { 
-      id: 28, 
-      title: "Autonomous AMR Navigation", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
-      videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
-      ],
-      detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
-      ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
-    },
-
-        { 
-      id: 27, 
-      title: "Autonomous AMR Navigation", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
-      videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
-      ],
-      detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
-      ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
-    },
-
-        { 
-      id: 26, 
-      title: "Autonomous AMR Navigation", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
-      videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
-      ],
-      detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
-      ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
-    },
-
-
-        { 
-      id: 25, 
-      title: "Autonomous AMR Navigation", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
-      videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
-      ],
-      detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
-      ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
-    },
-
-
-        { 
-      id: 24, 
-      title: "Autonomous AMR Navigation", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
-      videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
-      ],
-      detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
-      ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
-    },
-
-        { 
+    { 
       id: 23, 
-      title: "Autonomous AMR Navigation", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      title: "Humanoid Robotic Hand: Predefined Task Automation", 
+      category: "Robotics Manipulation", 
+      tag: "Mechatronics", 
+      img: p23_img1, 
+      images: [p23_img1, p23_img2],
       videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+        { 
+          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          title: "Hand Task Execution", 
+          type: "Hardware", 
+          desc: "Demonstrating predefined tasks like grasping, waving, and object holding using a humanoid robotic hand." 
+        }
       ],
       detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+        "Developed and programmed a multi-DOF (Degree of Freedom) humanoid robotic hand to execute a library of predefined tasks.",
+        "Mapped complex human gestures into discrete motor positions to perform tasks such as firm grasping, delicate object handling, and basic sign language.",
+        "Implemented a State Machine logic to transition smoothly between different predefined routines (e.g., Neutral to Grasp to Release).",
+        "Optimized the finger synchronization using PWM-based servo control to ensure fluid and natural movement patterns.",
+        "Conducted load-bearing tests to determine the maximum grip strength and stability of the hand during long-duration hold tasks.",
+        "Contribution: Designed the task-based control firmware, calibrated joint limits for safe operation, and optimized the power-to-torque distribution."
       ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+      techStack: ["C++", "Arduino/ESP32", "PWM Control", "Kinematics", "Servo Control Systems"]
     },
-
-        { 
+    { 
       id: 22, 
-      title: "Autonomous AMR Navigation", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      title: "QDD Actuator: Design, Development & Testing", 
+      category: "Hardware Engineering", 
+      tag: "Actuation & Mechatronics", 
+      img: p22_img1, 
+      images: [p22_img1, p22_img2],
       videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+        { 
+          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          title: "Actuator Performance Test", 
+          type: "Hardware R&D", 
+          desc: "Testing the torque-to-weight ratio and back-drivability of the custom-designed QDD actuator." 
+        }
       ],
       detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+        "Engineered a high-performance Quasi-Direct Drive (QDD) actuator from scratch, optimized for high-torque and high-bandwidth robotic applications.",
+        "Designed a low-reduction planetary gear system (e.g., 6:1 or 10:1) in SolidWorks to maximize back-drivability and impact resistance.",
+        "Selected and integrated a high-torque BLDC motor with a high-resolution magnetic encoder for precise closed-loop position and torque control.",
+        "Conducted rigorous testing for thermal management, peak torque output, and back-lash minimization to ensure reliability under dynamic loads.",
+        "Implemented FOC (Field Oriented Control) using an ODrive or custom motor controller for smooth and efficient motor commutation.",
+        "Contribution: Managed mechanical CAD design, gear tolerance analysis, motor driver configuration, and static/dynamic load testing."
       ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+      techStack: ["SolidWorks", "BLDC Motors", "Planetary Gears", "FOC (Field Oriented Control)", "Static & Dynamic Testing"]
     },
 
-        { 
+    { 
       id: 21, 
-      title: "Autonomous AMR Navigation", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
+      title: "Autonomous Vision-Based Pick & Place Robot Arm", 
+      category: "Robotics & AI", 
+      tag: "Computer Vision", 
+      img: p21_img1, 
+      images: [p21_img1, p21_img2],
       videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+        { 
+          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          title: "Real-World Autonomous Task", 
+          type: "Hardware", 
+          desc: "Demonstrating fully autonomous object detection, localization, and pick-and-place execution using a real robotic arm." 
+        }
       ],
       detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+        "Developed an end-to-end autonomous pipeline for a physical robotic arm to detect, pick, and place objects without manual intervention.",
+        "Integrated an Eye-to-Hand/Eye-in-Hand camera setup using OpenCV and YOLO to detect object classes and calculate their 2D/3D centroids.",
+        "Implemented Coordinate Transformation logic to convert image-pixel coordinates into the robot's world frame (Camera-to-Robot Calibration).",
+        "Utilized Inverse Kinematics (IK) to drive the end-effector to the precise object location with sub-millimeter accuracy.",
+        "Automated the grasping logic with feedback-based gripper control to ensure stable object handling during transport.",
+        "Contribution: Designed the vision-robot interface, performed workspace calibration, and optimized the motion planning for high-speed cycle times."
       ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+      techStack: ["Python", "OpenCV", "YOLOv8", "Inverse Kinematics", "PySerial/ROS", "Robotic Arm (Hardware)"]
     },
+
+
+    { 
+      id: 20, 
+      title: "Hybrid Gesture Control: IMU & Vision Integration", 
+      category: "Wearable Tech", 
+      tag: "Sensor Fusion", 
+      img: p20_img1, 
+      images: [p20_img1, p20_img2],
+      videoData: [
+        { 
+          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          title: "Real-time Hybrid Control", 
+          type: "Hardware & Sim", 
+          desc: "Controlling a virtual and physical hand using IMU for forearm rotation and Vision for finger tracking." 
+        }
+      ],
+      detailedDesc: [
+        "Developed a hybrid control system combining IMU sensors and Computer Vision for high-fidelity hand and arm tracking.",
+        "Integrated an MPU6050/BNO055 IMU sensor to track forearm twist (roll/pitch/yaw) and orientation using Madgwick/Kalman filters.",
+        "Utilized MediaPipe/OpenCV to track individual finger movements and joint flexions in real-time.",
+        "Synchronized the physical sensor data with a 3D digital twin in simulation (PyBullet/Isaac Sim) for low-latency mirroring.",
+        "Implemented a communication bridge (Serial/WiFi) to transmit sensor data from hardware to the simulation environment.",
+        "Contribution: Developed the sensor fusion algorithm, calibrated the IMU for drift compensation, and mapped hybrid data to a robotic hand model."
+      ],
+      techStack: ["MPU6050/BNO055", "Arduino/ESP32", "Python", "MediaPipe", "PyBullet", "Sensor Fusion"]
+    },
+
+
+
       { 
-        id: 20, 
-        title: "Autonomous AMR Navigation", 
-        category: "Robotics", 
-        tag: "SLAM & ROS 2", 
-        images: [p1_img1, p1_img2, p1_img3,p1_img3],
+        id: 19, 
+        title: "AI Gesture Control & Finger Movement Recognition", 
+        category: "Computer Vision", 
+        tag: "Human-Computer Interaction", 
+        img: p19_img1, 
+        images: [p19_img1, p19_img2],
         videoData: [
-          { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-          { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-          { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+          { 
+            url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+            title: "Hand Gesture Recognition Demo", 
+            type: "Computer Vision", 
+            desc: "Real-time finger movement tracking and gesture recognition using MediaPipe and OpenCV." 
+          }
         ],
         detailedDesc: [
-          "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-          "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-          "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-          "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+          "Developed an AI-driven system to recognize and track human hand gestures and individual finger movements in real-time.",
+          "Integrated MediaPipe Hand Landmarker to detect 21 unique 3D hand landmarks for high-precision tracking.",
+          "Implemented custom logic to translate specific finger orientations and gestures into system commands (e.g., volume control, mouse navigation).",
+          "Optimized the processing pipeline using OpenCV to ensure low-latency performance on standard webcams.",
+          "Contribution: Developed the gesture classification algorithm, optimized real-time video processing, and mapped landmarks to functional commands.",
+          "Use Case: Applicable in touchless interfaces, sign language translation, and virtual reality (VR) controls."
         ],
-        techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+        techStack: ["Python", "OpenCV", "MediaPipe", "NumPy", "Human-Computer Interaction (HCI)"]
       },
-        { 
-      id: 19, 
-      title: "Autonomous AMR Navigation", 
-      category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2, p1_img3,p1_img3],
-      videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
-      ],
-      detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
-      ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
-    },
 
     { 
       id: 18, 
@@ -358,24 +303,30 @@ export const PORTFOLIO_DATA = {
       techStack: ["PyBullet", "Python", "MPC", "PID Control", "Inverse Kinematics", "Gait Generation"]
     },
 
-        { 
+       { 
       id: 17, 
-      title: "Autonomous AMR Navigation", 
+      title: "Robotic Arm Pick and Place Simulation", 
       category: "Robotics", 
-      tag: "SLAM & ROS 2", 
-      images: [p1_img1, p1_img2],
+      tag: "Manipulation & Control", 
+      img: p17_img1,
+      images: [p17_img1, p17_img2],
       videoData: [
-        { url: p1_vid1, title: "Simulation Demo", type: "Gazebo", desc: "Testing SLAM algorithms in virtual environment." },
-        { url: p1_vid2, title: "Detection", type: "NVIDIA Jetson", desc: " hardware." },
-        { url: "https://www.youtube.com/embed/ro-cJp_Rg3M", title: "YouTube Demo", type: "Real World", desc: "Live navigation on hardware platform." }
+        { 
+          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          title: "Pick and Place Demo", 
+          type: "Simulation", 
+          desc: "End-to-end pick and place task execution in PyBullet using a multi-DOF robotic arm." 
+        }
       ],
       detailedDesc: [
-        "Implemented Gmapping and Cartographer for real-time 2D/3D SLAM.",
-        "Integrated TEB Local Planner for dynamic obstacle avoidance.",
-        "Designed a custom ROS 2 node for sensor fusion of LiDAR and IMU data.",
-        "Optimized navigation stack for NVIDIA Jetson Orin Nano deployment."
+        "Developed a high-fidelity simulation of a multi-degree-of-freedom (DOF) robotic arm to perform autonomous pick and place operations.",
+        "Implemented Inverse Kinematics (IK) to accurately calculate joint angles for reaching target coordinates in 3D space.",
+        "Designed a robust trajectory planning algorithm to ensure smooth and collision-free movement between the home, pick, and place positions.",
+        "Integrated gripper control logic for secure object manipulation, including force sensing and contact dynamics simulation.",
+        "Conducted performance analysis within the PyBullet physics engine to optimize cycle time and positional accuracy.",
+        "Contribution: Developed the motion control scripts, configured the URDF model of the arm, and implemented the coordinate-based task logic."
       ],
-      techStack: ["ROS 2 Humble", "C++", "Python", "LiDAR", "OpenCV"]
+      techStack: ["PyBullet", "Python", "Inverse Kinematics", "Trajectory Planning", "URDF Modeling", "Motion Control"]
     },
 
     { 
@@ -793,9 +744,5 @@ export const PORTFOLIO_DATA = {
       ],
       techStack: ["Raspberry Pi", "Python", "OpenCV", "SQLite (Database)", "QR Code Integration"] 
     },
-
-
-    { id: 10, title: "Jetson-Based Quadruped", category: "Embedded", tag: "Jetson Orin",
-       desc: "Legged locomotion on edge AI.", img: "https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?q=80&w=600" }
   ]
 };
