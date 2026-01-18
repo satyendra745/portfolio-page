@@ -1,7 +1,7 @@
 // Assets Imports
 import p1_vid1 from '../assets/videos/demo1.mp4';
 import p1_vid2 from '../assets/videos/video2.mp4';
-import p1_img1 from '../assets/images/IsaacLabtraining.jpg';
+import p1_img1 from '../assets/images/IsaacLab_training.jpg';
 import p1_img2 from '../assets/images/robot2.jpg';
 import p1_img3 from '../assets/images/profile.jpg';
 import p5_img1 from '../assets/images/Wifi_car2.jpg';
