@@ -72,20 +72,41 @@ export const PORTFOLIO_DATA = {
       company: "Highflow Industries (NextStep Robotics)",
       role: "Robotics Engineer",
       period: "December 2024 – Present",
-      tasks: ["Building autonomous navigation stacks for AMRs.", "Integrating LiDAR and RGB-D cameras for 3D SLAM.", "Developing hardware-agnostic Robot SDKs."]
+      tasks: [
+        "Advanced Manipulation: 14+ months of expertise in Robotic Arm simulation, transitioning from PyBullet's physics-based environments to high-fidelity NVIDIA Isaac Sim workflows.",
+        "Isaac Sim Expert: Developing complex manipulation scenes using RMPflow and MoveIt 2 for multi-DOF arms, focusing on obstacle avoidance and optimal trajectory planning.",
+        "Autonomous Navigation: Building end-to-end navigation stacks for AMRs using Nav2, integrating 3D LiDAR and RGB-D cameras for dynamic obstacle negotiation.",
+        "3D SLAM & Localization: Implementing RTAB-Map with ICP-based odometry on 3D LiDAR data, fine-tuning loop closure and graph optimization to eliminate localization drift.",
+        "Simulation-to-Real (S2R): Validating robot URDFs and controller stability in Isaac Sim before deployment on Jetson Orin Nano, ensuring consistent TF Tree performance.",
+        "Kinematics & Control: Developing custom Forward and Inverse Kinematics (IK) solvers and integrating force-feedback gripper logic for delicate pick-and-place tasks.",
+        "System Optimization: Architecting ROS 2 nodes and launch configurations on Edge devices, managing real-time data flow between sensors (LiDAR/Camera) and the navigation stack."
+      ]
     },
+
     {
       company: "XPRT Enforcement Pvt. Ltd.",
       role: "Embedded System Engineer",
       period: "August 2022 – February 2023",
-      tasks: ["Designed and developed new products.", "Created, tested, and validated hardware modules.", "Prepared technical documentation and compliance reports."]
+      tasks: ["End-to-End Product Development: Designed and prototyped IoT-based embedded systems, including circuit design, PCB layouting, and hands-on SMD component assembly.",
+        "Traffic Enforcement Systems: Contributed to 'Speedo Soft'—an AI-driven device for detecting triple-riding, helmet-less driving, and seatbelt violations using ANPR (Automatic Number Plate Recognition).",
+        "Sensor Integration: Developed firmware for advanced systems including Dual-Battery Intelligent Power Management, Radar-based speed detection, and breath analyzer modules.",
+        "Hardware R&D: Managed the complete hardware lifecycle from schematic capture to physical PCB printing and rigorous validation of electronic modules.",
+        "Smart Vehicle Telematics: Integrated GPS and Radar data modules for real-time vehicle tracking and violation logging in smart traffic environments.",
+        "System Architecture: Documented comprehensive technical reports and architecture for scalable IoT deployments in municipal traffic management."]
     },
-    {
+      {
       company: "Experio Traffiko System Pvt. Ltd.",
-      role: "Embedded Software Developer",
+      role: "Embedded Systems & IoT Engineer", // Role ko thoda broad kiya taaki PCB aur Hardware expertise dikhe
       period: "November 2020 – October 2021",
-      tasks: ["Designed and developed firmware for new products.", "Validated electronic modules through rigorous testing.", "Created system architecture reports."]
-    }
+      tasks: [
+        "End-to-End Product Development: Designed and prototyped IoT-based embedded systems, including circuit design, PCB layouting, and hands-on SMD component assembly.",
+        "Traffic Enforcement Systems: Contributed to 'Speedo Soft'—an AI-driven device for detecting triple-riding, helmet-less driving, and seatbelt violations using ANPR (Automatic Number Plate Recognition).",
+        "Sensor Integration: Developed firmware for advanced systems including Dual-Battery Intelligent Power Management, Radar-based speed detection, and breath analyzer modules.",
+        "Hardware R&D: Managed the complete hardware lifecycle from schematic capture to physical PCB printing and rigorous validation of electronic modules.",
+        "Smart Vehicle Telematics: Integrated GPS and Radar data modules for real-time vehicle tracking and violation logging in smart traffic environments.",
+        "System Architecture: Documented comprehensive technical reports and architecture for scalable IoT deployments in municipal traffic management."
+      ]
+    },
   ],
   training: [
     {
