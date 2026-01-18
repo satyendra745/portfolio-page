@@ -39,13 +39,13 @@ import p19_img1 from '../assets/images/gesture_hand1.jpg';
 import p19_img2 from '../assets/images/robot2.jpg';
 import p20_img1 from '../assets/images/gesture_imu.jpg';
 // import p20_img2 from '../assets/images/robot2.jpg';
-import p21_img1 from '../assets/images/RobticA.jpg';
+import p21_img1 from '../assets/images/RoboticA.jpg';
 // import p21_img2 from '../assets/images/robot2.jpg';
 
-import p22_img1 from '../assets/images/robot1.jpg';
-import p22_img2 from '../assets/images/robot2.jpg';
-import p23_img1 from '../assets/images/robot1.jpg';
-import p23_img2 from '../assets/images/robot2.jpg';
+import p22_img1 from '../assets/images/QDDA1.jpg';
+import p22_img2 from '../assets/images/QDDA2.jpg';
+import p23_img1 from '../assets/images/PreH.jpg';
+// import p23_img2 from '../assets/images/robot2.jpg';
 
 export const PORTFOLIO_DATA = {
   profile: {
