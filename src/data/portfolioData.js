@@ -111,7 +111,7 @@ export const PORTFOLIO_DATA = {
   training: [
     {
       company: "Softpro India Computer Technologies",
-      course: "Internet of Things (IoT)",
+      course: "Internet of Things (Online Mode)",
       period: "July 2024",
       tasks: ["IoT architecture and cloud connectivity.", "Sensor integration and data acquisition."]
     },
@@ -120,6 +120,12 @@ export const PORTFOLIO_DATA = {
       course: "PCB Design Crash Course",
       period: "July 2024",
       tasks: ["Schematic creation and layout design.", "Hands-on practice with electronic projects."]
+    },
+    {
+      company: "Softpro India Computer Technologies",
+      course: "Internet of Things",
+      period: "Jan 2020",
+      tasks: ["IoT architecture and cloud connectivity.", "Sensor integration and data acquisition."]
     },
     {
       company: "ITI Limited, Mankapur",
@@ -142,13 +148,19 @@ export const PORTFOLIO_DATA = {
       images: [p1_img1, p1_img2],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
-          title: "RL Training in Isaac Sim", 
-          type: "AI Training", 
-          desc: "Massively parallel training of a robotic arm using Isaac Gym and PPO algorithm for reach-and-grasp tasks." 
+          url: "https://www.youtube.com/embed/upPv2WdfEm4", 
+          title: "Isaac Sim Arm Simulation", 
+          type: "Simulation", 
+          desc: "Testing robotic arm joint movements and trajectory planning within the NVIDIA Isaac Sim environment." 
+        },
+       { 
+          url: "https://www.youtube.com/embed/rc3EDOIQOiY", 
+          title: "Massively Parallel Training", 
+          type: "Reinforcement Learning", 
+          desc: "Training multiple robotic arm agents simultaneously using NVIDIA Isaac Gym to accelerate policy convergence." 
         },
         { 
-          url: "https://www.youtube.com/embed/lsNRD4dlSf4", // Dummy URL
+          url: "https://www.youtube.com/embed/KXtaNST_glo", // Dummy URL
           title: "Model Inference Testing", 
           type: "Testing", 
           desc: "Validating the trained neural network model in a high-fidelity simulation environment." 
@@ -359,13 +371,13 @@ export const PORTFOLIO_DATA = {
       images: [p16_img1, p16_img2],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          url: "https://www.youtube.com/embed/VtB6pR2EQ9o", // Dummy URL
           title: "Isaac Sim 3D Mapping", 
           type: "Simulation", 
           desc: "Full system testing in Isaac Sim showing 3D point-cloud generation and 2D occupancy grid mapping." 
         },
         { 
-          url: "https://www.youtube.com/embed/lsNRD4dlSf4", // Dummy URL
+          url: "https://www.youtube.com/embed/I2cqL9m8MpA", // Dummy URL
           title: "RTAB-Map SLAM Demo", 
           type: "SLAM Stack", 
           desc: "Real-time 3D SLAM using RTAB-Map with 3D LiDAR for loop closure and localization." 
@@ -422,14 +434,14 @@ export const PORTFOLIO_DATA = {
       img: p14_img1, 
       images: [p14_img1, p14_img2],
       videoData: [
+        // { 
+        //   url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL (Aap baad mein change kar sakte hain)
+        //   title: "Isaac Sim Simulation Demo", 
+        //   type: "Simulation", 
+        //   desc: "Simulating a mobile robot in a photorealistic environment using NVIDIA Isaac Sim with LiDAR integration." 
+        // },
         { 
-          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL (Aap baad mein change kar sakte hain)
-          title: "Isaac Sim Simulation Demo", 
-          type: "Simulation", 
-          desc: "Simulating a mobile robot in a photorealistic environment using NVIDIA Isaac Sim with LiDAR integration." 
-        },
-        { 
-          url: "https://www.youtube.com/embed/lsNRD4dlSf4", // Dummy URL
+          url: "https://www.youtube.com/embed/6U82FyS4Jc4", // Dummy URL
           title: "Nav2 & Rviz2 Visualization", 
           type: "ROS 2 Stack", 
           desc: "Real-time path planning and costmap generation visualized in Rviz2 using the Nav2 framework." 
