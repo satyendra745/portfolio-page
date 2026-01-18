@@ -265,7 +265,7 @@ export const PORTFOLIO_DATA = {
       images: [p20_img1, p20_img2],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          url: "https://www.youtube.com/embed/S3SXXUCHBi0", // Dummy URL
           title: "Real-time Hybrid Control", 
           type: "Hardware & Sim", 
           desc: "Controlling a virtual and physical hand using IMU for forearm rotation and Vision for finger tracking." 
@@ -293,7 +293,7 @@ export const PORTFOLIO_DATA = {
         images: [p19_img1, p19_img2],
         videoData: [
           { 
-            url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+            url: "https://www.youtube.com/embed/cpDpGdSvcbQ", // Dummy URL
             title: "Hand Gesture Recognition Demo", 
             type: "Computer Vision", 
             desc: "Real-time finger movement tracking and gesture recognition using MediaPipe and OpenCV." 
@@ -319,7 +319,7 @@ export const PORTFOLIO_DATA = {
       images: [p18_img1, p18_img2],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/ro-cJp_Rg3M", // Example URL
+          url: "https://www.youtube.com/embed/fFPTa2rVziM", // Example URL
           title: "Bipedal Locomotion Demo", 
           type: "Simulation", 
           desc: "Bipedal walking gait execution in PyBullet environment using advanced control algorithms." 
@@ -404,17 +404,17 @@ export const PORTFOLIO_DATA = {
       images: [p15_img1, p15_img2],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          url: "https://www.youtube.com/embed/ta2KY15Wa2E", // Dummy URL
           title: "Isaac Sim 3D Simulation", 
           type: "Simulation", 
           desc: "Simulating an Ackermann steering robot in a 3D environment using Isaac Sim with Depth Camera and LiDAR." 
         },
-        { 
-          url: "https://www.youtube.com/embed/lsNRD4dlSf4", // Dummy URL
-          title: "RTAB-Map & Nav2 Stack", 
-          type: "ROS 2 Stack", 
-          desc: "Real-time 3D SLAM using RTAB-Map and path tracking with Regulated Pure Pursuit Controller." 
-        }
+        // { 
+        //   url: "https://www.youtube.com/embed/lsNRD4dlSf4", // Dummy URL
+        //   title: "RTAB-Map & Nav2 Stack", 
+        //   type: "ROS 2 Stack", 
+        //   desc: "Real-time 3D SLAM using RTAB-Map and path tracking with Regulated Pure Pursuit Controller." 
+        // }
       ],
       detailedDesc: [
         "Developed a robust 3D navigation pipeline for an Ackermann-steering mobile robot within the NVIDIA Isaac Sim environment.",
