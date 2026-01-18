@@ -1,7 +1,7 @@
 // Assets Imports
 import p1_vid1 from '../assets/videos/demo1.mp4';
 import p1_vid2 from '../assets/videos/video2.mp4';
-import p1_img1 from '../assets/images/robot1.jpg';
+import p1_img1 from '../assets/images/IsaacLabtraining.jpg';
 import p1_img2 from '../assets/images/robot2.jpg';
 import p1_img3 from '../assets/images/profile.jpg';
 import p5_img1 from '../assets/images/Wifi_car2.jpg';
@@ -29,13 +29,13 @@ import p14_img1 from '../assets/images/robot1.jpg';
 import p14_img2 from '../assets/images/robot2.jpg';
 import p15_img1 from '../assets/images/robot1.jpg';
 import p15_img2 from '../assets/images/robot2.jpg';
-import p16_img1 from '../assets/images/robot1.jpg';
-import p16_img2 from '../assets/images/robot2.jpg';
+import p16_img1 from '../assets/images/3D-Lidar-mapping.jpg';
+import p16_img2 from '../assets/images/3dMapping1.jpg';
 import p17_img1 from '../assets/images/robot1.jpg';
 import p17_img2 from '../assets/images/robot2.jpg';
 import p18_img1 from '../assets/images/robot1.jpg';
 import p18_img2 from '../assets/images/robot2.jpg';
-import p19_img1 from '../assets/images/robot1.jpg';
+import p19_img1 from '../assets/images/gesture_hand1.jpg';
 import p19_img2 from '../assets/images/robot2.jpg';
 import p20_img1 from '../assets/images/robot1.jpg';
 import p20_img2 from '../assets/images/robot2.jpg';
@@ -117,7 +117,7 @@ export const PORTFOLIO_DATA = {
       title: "RL-Based Robotic Arm Training & Inference", 
       category: "AI & Simulation", 
       tag: "Reinforcement Learning", 
-      img: p23_img1, 
+      img: p1_img1, 
       images: [p1_img1, p1_img2],
       videoData: [
         { 
@@ -331,7 +331,7 @@ export const PORTFOLIO_DATA = {
 
     { 
       id: 16, 
-      title: "Scratch-Built Autonomous AMR: 3D Mapping & Navigation", 
+      title: "Scratch-Built Autonomous AMR: 3D Mapping", 
       category: "Robotics", 
       tag: "Full-Stack Robotics", 
       img: p16_img1, 
