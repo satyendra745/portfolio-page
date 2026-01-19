@@ -144,7 +144,7 @@ const ProjectModal = ({ project, onClose }) => {
                 {/* Status Box */}
                 <div className="p-8 rounded-[2rem] bg-gradient-to-br from-[#0ea5e9]/5 to-transparent border border-[#0ea5e9]/10 mt-6">
                   <p className="text-xs text-gray-500 italic leading-relaxed text-center">
-                    Videos show hardware-in-the-loop (HIL) simulations and real-time edge deployment performance.
+                    Videos show .
                   </p>
                 </div>
               </div>
