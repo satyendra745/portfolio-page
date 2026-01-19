@@ -96,7 +96,7 @@ export const PORTFOLIO_DATA = {
     },
       {
       company: "Experio Traffiko System Pvt. Ltd.",
-      role: "Embedded Systems & IoT Engineer", // Role ko thoda broad kiya taaki PCB aur Hardware expertise dikhe
+      role: "Embedded Systems & IoT Engineer", 
       period: "November 2020 – October 2021",
       tasks: [
         "End-to-End Product Development: Designed and prototyped IoT-based embedded systems, including circuit design, PCB layouting, and hands-on SMD component assembly.",
@@ -145,7 +145,7 @@ export const PORTFOLIO_DATA = {
       category: "AI & Simulation", 
       tag: "Reinforcement Learning", 
       img: p1_img1, 
-      images: [p1_img1, p1_img2],
+      images: [p1_img1,],
       videoData: [
         { 
           url: "https://www.youtube.com/embed/upPv2WdfEm4", 
@@ -160,8 +160,7 @@ export const PORTFOLIO_DATA = {
           desc: "Training multiple robotic arm agents simultaneously using NVIDIA Isaac Gym to accelerate policy convergence." 
         },
         { 
-          url: "https://www.youtube.com/embed/KXtaNST_glo", // Dummy URL
-          title: "Model Inference Testing", 
+          url: "https://www.youtube.com/embed/KXtaNST_glo",
           type: "Testing", 
           desc: "Validating the trained neural network model in a high-fidelity simulation environment." 
         }
@@ -422,7 +421,7 @@ export const PORTFOLIO_DATA = {
           desc: "Simulating an Ackermann steering robot in a 3D environment using Isaac Sim with Depth Camera and LiDAR." 
         },
         // { 
-        //   url: "https://www.youtube.com/embed/lsNRD4dlSf4", // Dummy URL
+        //   url: "https://www.youtube.com/embed/lsNRD4dlSf4", 
         //   title: "RTAB-Map & Nav2 Stack", 
         //   type: "ROS 2 Stack", 
         //   desc: "Real-time 3D SLAM using RTAB-Map and path tracking with Regulated Pure Pursuit Controller." 
@@ -447,7 +446,7 @@ export const PORTFOLIO_DATA = {
       images: [p14_img1],
       videoData: [
         // { 
-        //   url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL (Aap baad mein change kar sakte hain)
+        //   url: "https://www.youtube.com/embed/pNOSRNXqBpU", 
         //   title: "Isaac Sim Simulation Demo", 
         //   type: "Simulation", 
         //   desc: "Simulating a mobile robot in a photorealistic environment using NVIDIA Isaac Sim with LiDAR integration." 
@@ -541,15 +540,14 @@ export const PORTFOLIO_DATA = {
       { 
         id: 11, 
         title: "Multi-Control Emergency Light & Location Tracking System", 
-        category: "Safety & IoT", // Robotics se badal kar relevant domain kiya
-        tag: "Smart Safety", 
+        category: "Safety & IoT", 
         img: p11_img1,
         images: [p11_img1, p11_img2],
         videoData: [
           { 
             url: "https://www.youtube.com/embed/uS0qQhdwVUM", 
             title: "Emergency System Demo", 
-            type: "Hardware Integration", // Gazebo ko hata kar Hardware kiya
+            type: "Hardware Integration", 
             desc: "An intelligent emergency light system featuring multi-control switches and integrated GPS/GSM for real-time location tracking during emergencies." 
           }
         ],
@@ -560,7 +558,7 @@ export const PORTFOLIO_DATA = {
           "Developed an intelligent switching logic to ensure the emergency light activates instantly during power failures or triggered events.",
           "Contribution: Designed the full circuit architecture, developed the location-sharing firmware, and integrated GSM/GPS protocols for seamless remote communication."
         ],
-        techStack: ["Arduino/ESP32", "C++", "GPS Module (NEO-6M)", "GSM Module (SIM800L)", "IoT Sensors"] // LiDAR/ROS ko hata kar actual hardware stack dala
+        techStack: ["Arduino/ESP32", "C++", "GPS Module (NEO-6M)", "GSM Module (SIM800L)", "IoT Sensors"] 
       },
 
     { 
@@ -570,7 +568,7 @@ export const PORTFOLIO_DATA = {
       tag: "Hardware & Data Logging", 
       img: p2_img1,
       images: [p2_img1, p2_img2],
-      // Agar iska video link milta hai toh aap yahan embed kar sakte hain
+     
       videoData: [], 
       detailedDesc: [
         "Objective: Collect and store LiDAR data for applications like navigation and object detection.",
@@ -615,9 +613,9 @@ export const PORTFOLIO_DATA = {
     { 
       id: 4, 
       title: "Line Follower Robot (L.F.R)", 
-      category: "Robotics", // Multi-Agent se badal kar Robotics kiya
+      category: "Robotics", 
       tag: "Automation & Control", 
-      img: p3_img1, // Is image variable ko ensure karein ki ye LFR ki hi ho
+      img: p3_img1,
       images: [p3_img1],
       videoData: [
         { 
@@ -658,7 +656,7 @@ export const PORTFOLIO_DATA = {
     { 
       id: 5, 
       title: "WiFi-Controlled Car", 
-      category: "IoT & Robotics", // Navigation se badal kar domain specific kiya
+      category: "IoT & Robotics", 
       tag: "Wireless Control", 
       img: p5_img1,
       images: [p5_img1, p5_img2],
@@ -716,7 +714,7 @@ export const PORTFOLIO_DATA = {
     { 
       id: 7, 
       title: "Dual-Battery Intelligent Power Management System", 
-      category: "Power Electronics", // Power management se badal kar technical category di
+      category: "Power Electronics", 
       tag: "Smart Energy", 
       img: p7_img1,
       images: [p7_img1, p7_img2],
@@ -735,14 +733,14 @@ export const PORTFOLIO_DATA = {
         "Integrated safety features to prevent deep discharge and enhance the longevity of both power units.",
         "Contribution: Developed the switching algorithm, designed the sensing circuit, and integrated the relay/MOSFET control system."
       ],
-      techStack: ["Embedded C", "Arduino/ATmega", "Voltage Sensing", "Relay/MOSFET Logic", "Power Electronics"] // Purane tech stack ko hardware-specific kiya
+      techStack: ["Embedded C", "Arduino/ATmega", "Voltage Sensing", "Relay/MOSFET Logic", "Power Electronics"] 
     },
 
 
     { 
       id: 8, 
       title: "Advanced Breath Analyzer System", 
-      category: "Safety Systems", // Aviation/Safety category ke liye perfect hai
+      category: "Safety Systems", 
       tag: "Embedded AI", 
       img: p8_img1,
       images: [p8_img1, p8_img2, p8_img3],
