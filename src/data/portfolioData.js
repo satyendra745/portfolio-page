@@ -1,6 +1,6 @@
 // Assets Imports
-import p1_vid1 from '../assets/videos/demo1.mp4';
-import p1_vid2 from '../assets/videos/video2.mp4';
+// import p1_vid1 from '../assets/videos/demo1.mp4';
+import p22_vid2 from '../assets/videos/QDD_A.mp4';
 import p1_img1 from '../assets/images/IsaacLab_training.jpg';
 import p1_img2 from '../assets/images/robot2.jpg';
 import p1_img3 from '../assets/images/profile.jpg';
@@ -45,7 +45,7 @@ import p21_img1 from '../assets/images/RoboticA.jpg';
 import p22_img1 from '../assets/images/QDDA1.jpg';
 import p22_img2 from '../assets/images/QDDA2.jpg';
 import p23_img1 from '../assets/images/PreH.jpg';
-// import p23_img2 from '../assets/images/robot2.jpg';
+import p23_img2 from '../assets/images/PreH2.jpg';
 
 export const PORTFOLIO_DATA = {
   profile: {
@@ -184,7 +184,7 @@ export const PORTFOLIO_DATA = {
       category: "Robotics Manipulation", 
       tag: "Mechatronics", 
       img: p23_img1, 
-      images: [p23_img1],
+      images: [p23_img1,p23_img2,],
       videoData: [
         { 
           url: "https://www.youtube.com/embed/R8y31M2cbRU",
@@ -213,6 +213,12 @@ export const PORTFOLIO_DATA = {
       videoData: [
         { 
           url: "https://www.youtube.com/embed/QCXooBABelQ", 
+          title: "Actuator Performance Test", 
+          type: "Hardware R&D", 
+          desc: "Testing the torque-to-weight ratio and back-drivability of the custom-designed QDD actuator." 
+        },
+        { 
+          url: p22_vid2, 
           title: "Actuator Performance Test", 
           type: "Hardware R&D", 
           desc: "Testing the torque-to-weight ratio and back-drivability of the custom-designed QDD actuator." 
