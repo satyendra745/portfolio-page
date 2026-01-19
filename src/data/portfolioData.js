@@ -193,7 +193,7 @@ export const PORTFOLIO_DATA = {
           desc: "Demonstrating predefined tasks like grasping, waving, and object holding using a humanoid robotic hand." 
         },
         { 
-          url: "https://www.youtube.com/embed/-0cYiFXGzWA",
+          url: "https://www.youtube.com/embed/cxwXiCVVMF8",
           title: "Elbow testing", 
           type: "Hardware", 
           desc: "Demonstrating predefined tasks elbow motor testing." 
