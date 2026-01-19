@@ -345,7 +345,7 @@ export const PORTFOLIO_DATA = {
       images: [p17_img1],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          url: "https://www.youtube.com/embed/wZVnouL3a3U", 
           title: "Pick and Place Demo", 
           type: "Simulation", 
           desc: "End-to-end pick and place task execution in PyBullet using a multi-DOF robotic arm." 
@@ -381,6 +381,12 @@ export const PORTFOLIO_DATA = {
           title: "RTAB-Map SLAM Demo", 
           type: "SLAM Stack", 
           desc: "Real-time 3D SLAM using RTAB-Map with 3D LiDAR for loop closure and localization." 
+        },
+        { 
+          url: "https://www.youtube.com/embed/nhs-GGnqtOg", 
+          title: "Solidwork to Isaac Sim Demo", 
+          type: "Designing", 
+          desc: "Designing and simulation." 
         }
       ],
       detailedDesc: [
