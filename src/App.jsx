@@ -182,7 +182,7 @@ export default function App() {
         <section id="contact" className="p-12 lg:p-24 border-t border-white/5 bg-[#030a1c]/40 text-center">
            <h2 className="text-4xl font-extrabold mb-6">Contact</h2>
            <p className="text-gray-400 mb-10 max-w-xl mx-auto">Inbox is always open for new opportunities!</p>
-           <a href="mailto:satyendra@example.com" className="px-12 py-4 bg-[#0ea5e9] rounded-xl font-bold hover:scale-105 transition-all inline-flex items-center gap-2 shadow-lg shadow-sky-500/20">
+           <a href="mailto:nsatyendr12@example.com" className="px-12 py-4 bg-[#0ea5e9] rounded-xl font-bold hover:scale-105 transition-all inline-flex items-center gap-2 shadow-lg shadow-sky-500/20">
              <Mail size={20} /> Say Hello
            </a>
         </section>
