@@ -136,8 +136,8 @@ export const PORTFOLIO_DATA = {
     }
   ],
   education: [
-    { degree: "B.Tech in Robotics & AI", institution: "Your University Name", period: "2021 – 2025" },
-    { degree: "Diploma in Engineering", institution: "Your Polytechnic Name", period: "2018 – 2021" }
+    { degree: "B.Tech in Electronics & Communication Engineering", institution: "AKTU", period: "2021 – 2024" },
+    { degree: "Diploma in Electronics Engineering", institution: "MMIT Sant Kabir Nagar", period: "2018 – 2020" }
   ],
   projects: [
     { 
