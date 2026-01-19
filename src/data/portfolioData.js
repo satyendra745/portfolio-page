@@ -191,6 +191,18 @@ export const PORTFOLIO_DATA = {
           title: "Hand Task Execution", 
           type: "Hardware", 
           desc: "Demonstrating predefined tasks like grasping, waving, and object holding using a humanoid robotic hand." 
+        },
+        { 
+          url: "https://www.youtube.com/embed/-0cYiFXGzWA",
+          title: "Elbow testing", 
+          type: "Hardware", 
+          desc: "Demonstrating predefined tasks elbow motor testing." 
+        },
+        { 
+          url: "https://www.youtube.com/embed/IxUBE8Fkoac",
+          title: "Hand finger testing", 
+          type: "Hardware", 
+          desc: "Demonstrating finger movement." 
         }
       ],
       detailedDesc: [
@@ -222,7 +234,13 @@ export const PORTFOLIO_DATA = {
           title: "Actuator Performance Test", 
           type: "Hardware R&D", 
           desc: "Testing the torque-to-weight ratio and back-drivability of the custom-designed QDD actuator." 
-        }
+        },
+         { 
+          url: "https://www.youtube.com/embed/D_h7B56Bbao", 
+          title: "Actuator load Test", 
+          type: "Hardware R&D", 
+          desc: "Testing the torque-to-weight ratio and back-drivability of the custom-designed QDD actuator." 
+        },
       ],
       detailedDesc: [
         "Engineered a high-performance Quasi-Direct Drive (QDD) actuator from scratch, optimized for high-torque and high-bandwidth robotic applications.",
@@ -390,7 +408,7 @@ export const PORTFOLIO_DATA = {
       images: [p24_img1],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/a9nJAC-Pd8g", 
+          url: "https://www.youtube.com/embed/-0cYiFXGzWA", 
           title: "PyBullet Sim-to-Real Pipeline", 
           type: "Research & Development", 
           desc: "Synchronizing a PyBullet simulated robotic arm with real-world hardware using ROS 2 and PySerial." 
