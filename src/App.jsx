@@ -34,7 +34,7 @@ export default function App() {
   const smoothY = useSpring(mouseY, { damping: 25, stiffness: 150 });
 
   // 3. Typing Animation Logic
-  const phrases = useMemo(() => ["ROS 2 Dev", "AI & Robotics", "SLAM Expert"], []);
+  const phrases = useMemo(() => ["ROS 2", "AI & Robotics", "SLAM Expert"], []);
   
   useEffect(() => {
     let i = 0, j = 0, isDeleting = false;

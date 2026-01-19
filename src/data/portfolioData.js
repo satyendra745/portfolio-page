@@ -63,9 +63,9 @@ export const PORTFOLIO_DATA = {
   },
   skills: [
     { category: "Core", items: ["Python (OOP)", "C++", "C"] },
-    { category: "Simulation", items: ["Isaac Sim", "Isaac Lab", "Ignition Gazebo"] },
+    { category: "Simulation", items: ["Isaac Sim", "Isaac Lab", "Ignition Gazebo","Pybullet"] },
     { category: "Robotics", items: ["ROS 2 (Humble/Jazzy)", "Nav2", "RTAB-MAP", "MoveIt 2"] },
-    { category: "Tools", items: ["Git", "Linux", "AutoCAD (Fusion360)"] },
+    { category: "Tools", items: ["Git", "Linux", "Solidwork"] },
     { category: "AI & CV", items: ["PyTorch", "YOLOv8", "OpenCV", "MediaPipe", "Reinforcement Learning"] }
   ],
   experience: [
@@ -112,28 +112,57 @@ export const PORTFOLIO_DATA = {
   training: [
     {
       company: "Softpro India Computer Technologies",
-      course: "Internet of Things (Online Mode)",
+      course: "Internet of Things (Professional Certification)",
       period: "July 2024",
-      tasks: ["IoT architecture and cloud connectivity.", "Sensor integration and data acquisition."]
+      tasks: [
+        "IoT Stack & Architecture: Mastered the 4-layer IoT architecture, focusing on the integration of Perception, Network, Support, and Application layers.",
+        "Cloud Connectivity & Protocols: Implemented real-time data streaming to cloud platforms (like ThingSpeak or Firebase) using MQTT and HTTP protocols for remote monitoring.",
+        "Sensor Fusion & Data Acquisition: Configured multi-sensor arrays (DHT, Ultrasonic, IR) for precise data collection and noise filtering at the edge.",
+        "Embedded Programming: Developed low-power firmware for ESP32 and Arduino boards, enabling wireless communication (Wi-Fi/Bluetooth) for smart-home automation use cases.",
+        "System Prototyping: Gained hands-on experience in building end-to-end IoT pipelines, from hardware sensor interfacing to real-time dashboard visualization.",
+        "Technical Documentation: Created comprehensive system design reports and circuit schematics for scalable IoT node deployments."
+      ]
     },
     {
-      company: "Softpro India Computer Technologies",
-      course: "PCB Design Crash Course",
-      period: "July 2024",
-      tasks: ["Schematic creation and layout design.", "Hands-on practice with electronic projects."]
-    },
-    {
-      company: "Softpro India Computer Technologies",
-      course: "Internet of Things",
-      period: "Jan 2020",
-      tasks: ["IoT architecture and cloud connectivity.", "Sensor integration and data acquisition."]
-    },
-    {
-      company: "ITI Limited, Mankapur",
-      course: "Embedded System & OS",
+      company: "ITI Limited, Mankapur (A Govt. of India Enterprise)",
+      course: "Advanced Embedded Systems & Real-Time OS (RTOS)",
       period: "July 2019",
-      tasks: ["Fundamentals of real-time operating systems.", "Microcontroller interfacing and integration."]
-    }
+      tasks: [
+        "RTOS Fundamentals: Studied the architecture of Real-Time Operating Systems, focusing on task scheduling, interrupt handling, and multi-threading for time-critical applications.",
+        "Microcontroller Mastery: Gained hands-on experience in interfacing 8051 and AVR microcontrollers with peripherals like LCDs, Keypads, and ADC/DAC modules.",
+        "Embedded C Programming: Developed firmware using Embedded C, implementing optimized memory management and hardware abstraction layers (HAL).",
+        "System Integration: Conducted debugging and testing of embedded circuits to ensure reliable communication between hardware components and the OS kernel.",
+        "Industrial Standards: Observed the large-scale manufacturing and assembly processes of telecommunication equipment, understanding industrial-grade quality control.",
+        "Protocol Implementation: Practiced low-level serial communication protocols including UART, I2C, and SPI for efficient data transfer between sensors and MCUs."
+      ]
+    },
+    {
+      company: "Softpro India Computer Technologies",
+      course: "Advanced Internet of Things (IoT) & Embedded AI",
+      period: "Jan 2020",
+      tasks: [
+        "Comprehensive IoT Architecture: Studied the end-to-end flow of IoT systems, from edge devices and gateways to cloud-based data processing layers.",
+        "Hardware Expertise (ESP series): Developed firmware for ESP8266 and ESP32 to implement Wi-Fi based data logging and real-time remote actuator control.",
+        "Single Board Computing (Raspberry Pi): Configured Raspberry Pi environments for high-level tasks, including local web servers and data aggregation using Linux-based systems.",
+        "Python Programming for IoT: Mastered Python for automating data acquisition, processing sensor streams, and building communication scripts via MQTT and HTTP protocols.",
+        "Cloud & Connectivity: Integrated edge devices with cloud platforms for real-time visualization, utilizing both REST APIs and pub/sub messaging models.",
+        "Sensor Fusion & Integration: Interfaced a variety of digital and analog sensors (DHT, Ultrasonic, PIR) with microcontrollers to build responsive smart-city and home automation prototypes.",
+        "Contribution: Designed the logic for autonomous data reporting, performed hardware-software debugging, and optimized Python scripts for low-latency execution."
+      ]
+    },
+    {
+      company: "ITI Limited, Mankapur (A Govt. of India Enterprise)",
+      course: "Advanced Embedded Systems & Real-Time OS (RTOS)",
+      period: "July 2019",
+      tasks: [
+        "RTOS Fundamentals: Studied the architecture of Real-Time Operating Systems, focusing on task scheduling, interrupt handling, and multi-threading for time-critical applications.",
+        "Microcontroller Mastery: Gained hands-on experience in interfacing 8051 and AVR microcontrollers with peripherals like LCDs, Keypads, and ADC/DAC modules.",
+        "Embedded C Programming: Developed firmware using Embedded C, implementing optimized memory management and hardware abstraction layers (HAL).",
+        "System Integration: Conducted debugging and testing of embedded circuits to ensure reliable communication between hardware components and the OS kernel.",
+        "Industrial Standards: Observed the large-scale manufacturing and assembly processes of telecommunication equipment, understanding industrial-grade quality control.",
+        "Protocol Implementation: Practiced low-level serial communication protocols including UART, I2C, and SPI for efficient data transfer between sensors and MCUs."
+      ]
+    },
   ],
   education: [
     { degree: "B.Tech in Electronics & Communication Engineering", institution: "AKTU", period: "2021 – 2024" },
