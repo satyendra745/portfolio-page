@@ -187,7 +187,7 @@ export const PORTFOLIO_DATA = {
       images: [p23_img1],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/Xve4OhukGK0",
+          url: "https://www.youtube.com/embed/R8y31M2cbRU",
           title: "Hand Task Execution", 
           type: "Hardware", 
           desc: "Demonstrating predefined tasks like grasping, waving, and object holding using a humanoid robotic hand." 
@@ -212,7 +212,7 @@ export const PORTFOLIO_DATA = {
       images: [p22_img1, p22_img2],
       videoData: [
         { 
-          url: "https://www.youtube.com/embed/pNOSRNXqBpU", // Dummy URL
+          url: "https://www.youtube.com/embed/QCXooBABelQ", 
           title: "Actuator Performance Test", 
           type: "Hardware R&D", 
           desc: "Testing the torque-to-weight ratio and back-drivability of the custom-designed QDD actuator." 
