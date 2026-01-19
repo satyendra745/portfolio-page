@@ -46,6 +46,7 @@ import p22_img1 from '../assets/images/QDDA1.jpg';
 import p22_img2 from '../assets/images/QDDA2.jpg';
 import p23_img1 from '../assets/images/PreH.jpg';
 import p23_img2 from '../assets/images/PreH2.jpg';
+import p24_img1 from '../assets/images/Sim2Real.jpg';
 
 export const PORTFOLIO_DATA = {
   profile: {
@@ -328,6 +329,13 @@ export const PORTFOLIO_DATA = {
           title: "Bipedal Locomotion Demo", 
           type: "Simulation", 
           desc: "Bipedal walking gait execution in PyBullet environment using advanced control algorithms." 
+        },
+
+        { 
+          url: "https://www.youtube.com/embed/a9nJAC-Pd8g",
+          title: "Bipedal Walking Demo", 
+          type: "Simulation", 
+          desc: "Bipedal walking gait execution in PyBullet environment using advanced control algorithms." 
         }
       ],
       detailedDesc: [
@@ -354,7 +362,13 @@ export const PORTFOLIO_DATA = {
           title: "Pick and Place Demo", 
           type: "Simulation", 
           desc: "End-to-end pick and place task execution in PyBullet using a multi-DOF robotic arm." 
-        }
+        },
+        { 
+          url: "https://www.youtube.com/embed/M6f9EsrdS_4", 
+          title: "Pick and Place Demo", 
+          type: "Simulation", 
+          desc: "End-to-end pick and place task execution in PyBullet using a multi-DOF robotic arm." 
+        },
       ],
       detailedDesc: [
         "Developed a high-fidelity simulation of a multi-degree-of-freedom (DOF) robotic arm to perform autonomous pick and place operations.",
@@ -365,6 +379,38 @@ export const PORTFOLIO_DATA = {
         "Contribution: Developed the motion control scripts, configured the URDF model of the arm, and implemented the coordinate-based task logic."
       ],
       techStack: ["PyBullet", "Python", "Inverse Kinematics", "Trajectory Planning", "URDF Modeling", "Motion Control"]
+    },
+
+    { 
+      id: 24, 
+      title: "PyBullet Sim-to-Real: Robotic Arm Deployment", 
+      category: "Robotics R&D", 
+      tag: "Sim-to-Real", 
+      img: p24_img1, 
+      images: [p24_img1],
+      videoData: [
+        { 
+          url: "https://www.youtube.com/embed/a9nJAC-Pd8g", 
+          title: "PyBullet Sim-to-Real Pipeline", 
+          type: "Research & Development", 
+          desc: "Synchronizing a PyBullet simulated robotic arm with real-world hardware using ROS 2 and PySerial." 
+        },
+         { 
+          url: "https://www.youtube.com/embed/9oYOzs6hHoI", 
+          title: "PyBullet Sim-to-Real Pipeline", 
+          type: "Research & Development", 
+          desc: "Synchronizing a PyBullet simulated robotic arm with real-world hardware using ROS 2 and PySerial." 
+        }
+      ],
+      detailedDesc: [
+        "Architected a complete Sim-to-Real pipeline, ensuring seamless transfer of control policies from PyBullet physics engine to physical robotic hardware.",
+        "Developed a digital twin synchronization system where the physical arm mirrors the simulated model's joint states with minimal latency.",
+        "Integrated Domain Randomization techniques in PyBullet to make the control algorithms robust against real-world friction and motor torque variations.",
+        "Implemented a Python-based middleware using PySerial and ROS 2 to translate simulated joint trajectories into real-time motor commands.",
+        "Executed rigorous validation by comparing real-world end-effector trajectories against simulated ground truth data for sub-millimeter precision.",
+        "Contribution: Designed the communication bridge, handled coordinate frame transformations (TF), and tuned PID gains to match physical hardware dynamics."
+      ],
+      techStack: ["PyBullet", "Python", "ROS 2 Humble", "Serial Communication", "Digital Twin", "PID Tuning"]
     },
 
     { 
